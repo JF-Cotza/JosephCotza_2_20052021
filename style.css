@@ -1,0 +1,22 @@
+/* utile :
+bleu foncé : #0065FC
+bleu clair : #DEEBFF
+fond gris : #F2F2F2
+font : Raleway.
+*/
+
+.page {
+    background-color: white;
+}
+
+.filter {
+    background-color: blue;
+}
+
+.filter:hover {
+    background-color: red;
+}
+
+.grey {
+    background-color: #F2F2F2;
+}
