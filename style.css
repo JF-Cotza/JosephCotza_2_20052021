@@ -15,6 +15,11 @@ font : Raleway.
                 font-family: 'ralewaybold';
                 src: url('font/Raleway-Bold.ttf');
             }
+            
+            @font-face {
+                font-family: 'ralewayblack';
+                src: url('font/Raleway-Black.ttf');
+            }
             /**************** Général  **********************/
             
             body {
@@ -28,13 +33,16 @@ font : Raleway.
             }
             
             h1 {
-                /*font-family: 'ralewaybold';*/
-                font-size: 1.6rem;
+                font-family: 'ralewaybold';
+                font-size: 1.4rem;
             }
             
-            h2,
-            p {
+            h2 {
                 font-size: 1.2rem;
+            }
+            
+            p {
+                font-size: 1rem;
             }
             
             a {
@@ -106,3 +114,41 @@ font : Raleway.
                 border-bottom: none;
             }
             /************* main *******************/
+            
+            .headmain {
+                width: 90%;
+                margin: auto;
+            }
+            
+            .headmain h1 {
+                margin-top: 30px;
+            }
+            
+            .headmain .fas {
+                font-size: 1.1rem;
+                margin: auto;
+                padding: 18px 18px;
+            }
+            
+            .headmain button {
+                color: #DEEBFF;
+                background-color: #0065FC;
+                border-radius: 10px;
+            }
+            
+            .headmain i {
+                color: black;
+                border-radius: 10px 0 0 10px;
+            }
+            
+            .headmain p {
+                border-collapse: collapse;
+            }
+            
+            input {
+                padding: 16px 0;
+                font-size: 1.1rem;
+                text-align: center;
+                width: 65%;
+                font-weight: bold;
+            }
