@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!--
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' rel="stylesheet">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css" rel="stylesheet">
-    -->
     <script src="https://kit.fontawesome.com/f203ca5a30.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
@@ -36,21 +31,31 @@
             <div class='headmain'>
                 <h1>Trouvez vos hébergements pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine pature</p>
-                <p><i class="fas fa-map-marker-alt"></i><input type="search" name="city" id="city" value='Marseille, France'><button class="fas fa-search"></button></i>
-                </p>
-            </div>
 
-            <p>
-                Filtres
-            </p>
-            <div>
-                <div class='filter'>Economique</div>
-                <div class='filter'>Familial</div>
-                <div class='filter'>Romantique</div>
-                <div class='filter'>Animaux autorisés</div>
+                <!-- search area / zone de recherche-->
+                <form action="#" method="post">
+                    <p id='searcharea'><i class="fas fa-map-marker-alt"></i><input type="search" name="city" id="city" value='Marseille, France'><button class="fas fa-search"></button></i>
+                    </p>
+                </form>
             </div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <!-- filter area / les filtres -->
+            <div id="filterArea">
+                <h2>Filtres</h2>
+                <form action="#" method="post">
+                    <p>
+                        <label for="cheep" class='filter'>
+                            <input type="checkbox" name="cheep" id="cheep" value='cheep'>Economique
+                        </label>
+                        <label for="family" class='filter'>
+                            <input type="checkbox" name="family" id="family">Familial
+                        </label>
+                        <input type="checkbox" name="romantic" id="romantic" class='filter'>Romantique
+                        <input type="checkbox" name="animals" id="animals" class='filter'>Animaux autorisés
+                    </p>
+                </form>
 
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
             <!-- les plus populaires -->
             <section class='grey'>
                 <h1>Les plus populaires</h1>
