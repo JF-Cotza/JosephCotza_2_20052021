@@ -39,7 +39,7 @@
                 </form>
             </div>
             <!-- filter area / les filtres -->
-            <div id="filterarea">
+            <div id="filterarea" class='afinir'>
                 <h2>Filtres</h2>
                 <form action="#" method="post">
                     <p id='filterform'>
@@ -64,10 +64,26 @@
 
             <!-- les plus populaires -->
             <section id='popularaera' class='grey'>
-                <h1>Les plus populaires</h1>
+                <div id="populartitle">
+                    <h1>Les plus populaires</h1><i class="fas fa-chart-line"></i>
+
+                </div>
                 <article>
                     <a href="">
-                        <img src="" alt="">
+                        <picture>
+                            <source srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" media="(max-width: 767px)">
+                            <source srcset="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" media="(min-width:768px and max-width: 991px)">
+                            <source srcset="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" media="(min-width:992px and max-width: 1199px)">
+                            <img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" />
+                        </picture>
+
+                        <!--
+    - Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
+- Tablettes (768 px - 991 px)
+- Ordinateurs (992 px - 1199 px)
+- Grands écrans d'ordinateurs et télévisions
+-->
+
                         <h2>Hôtel Le soleil du matin</h2>
                         <p>Nuit à partir de 128€</p>
                         <p></p>

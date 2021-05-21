@@ -1,0 +1,5 @@
+Hebergement
+1_xlarge\	4000px min
+2_large\	2k/3k
+3_medium\	1000/1500
+4_small\	500/750
