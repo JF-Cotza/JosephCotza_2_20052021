@@ -63,7 +63,6 @@
         font-family: 'ralewaybold';
         display: inline-block;
         color: #0065FC;
-        /*border: 1px solid black;*/
         border-bottom: 3px solid #0065FC;
         padding-bottom: 17px;
         padding-top: 17px;
@@ -263,12 +262,31 @@
     }
     
     #popularaera picture img {
-        width: 50%;
-        height: 50%;
+        max-height: 9rem;
+        max-width: 4rem;
+        overflow: hidden;
+        border-radius: 26px 0 0 26px;
+    }
+    /* https://askcodez.com/comment-cacher-une-partie-de-limage.html */
+    
+    #popularaera article {
+        margin-left: 1.2rem;
+        margin-right: 0.4rem;
+        border: 5px solid black;
+        border-radius: 26px;
+        background-color: rgba(0, 255, 0, .5);
+        display: flex;
+        flex-wrap: wrap;
     }
     /* utile :
 bleu foncé : #0065FC
 bleu clair : #DEEBFF
 fond gris : #F2F2F2
 font : Raleway.
+
+Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
+- Tablettes (768 px - 991 px)
+- Ordinateurs (992 px - 1199 px)
+- Grands écrans d'ordinateurs et télévisions
+
 */
