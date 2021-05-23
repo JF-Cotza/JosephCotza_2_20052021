@@ -49,25 +49,48 @@
         }
         /******************** header *****************/
         
+        header {
+            width: 100%;
+            background-color: rgba(0, 255, 0, .5);
+        }
+        
+        #logo {
+            position: absolute;
+            top: 29px;
+            width: 50%;
+        }
+        
+        #logo img {
+            padding-right: 50px;
+            padding-top: 1px;
+            padding-bottom: 5px;
+        }
+        
         nav {
             height: 132px;
             width: 100%;
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
             flex-wrap: wrap;
-            /*positionnement en bas des liens -> align-items:flex-end*/
             align-items: flex-end;
             text-align: center;
+            background-color: rgba(0, 0, 255, .5);
         }
         
-        nav a {
+        #rightlinks {
+            /*width: 150%;*/
+            display: flex;
+            flex-wrap: wrap-reverse;
+            /*pour mettre s'inscrire au dessus*/
+            justify-content: flex-end;
+            /*pour mettre s'inscrire à droite*/
+        }
+        
+        #rightlinks a {
             width: 50%;
             height: auto;
             font-family: 'ralewaybold';
             display: inline-block;
             color: #0065FC;
-            border-bottom: 3px solid #0065FC;
             padding-bottom: 17px;
             padding-top: 17px;
         }
@@ -78,30 +101,22 @@
             display: inline-block;
             color: black;
             flex: 1;
+        }
+        
+        #hominglink,
+        #activitylink {
+            border-bottom: 3px solid #0065FC;
+        }
+        
+        #hominglink:hover,
+        #activitylink:hover {
             border-bottom: 3px solid #DEEBFF;
         }
         
-        #connect {
-            position: absolute;
-            top: 30px;
-            /*sans padding de 17:47px;*/
-            right: -45px;
-        }
-        
-        #logo {
-            position: absolute;
-            top: 15px;
-            /* sans padding de 17: 32px;*/
-            left: -18px;
-        }
-        
-        #logo,
-        #connect {
-            border-bottom: none;
-        }
-        
-        header {
-            background-image: url('Maquettes/Header-iPhone\ 8.png');
+        #connectlink {
+            text-align: right;
+            margin-right: 5px;
+            align-self: self-end;
         }
         /********** footer *****************/
         
@@ -142,6 +157,27 @@
                 background-image: url('Maquettes/Header-Desktop.png');
                 /* changement de fond pour vérifier que les media queries fonctionnent */
             }
+            /* header media queries*/
+            nav {
+                display: flex;
+                justify-content: space-between;
+            }
+            nav div {
+                display: inline-block;
+            }
+            #logo {
+                position: unset;
+                /*suppression de la propriété position */
+            }
+            #rightlinks {
+                width: 33%;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            #rightlinks a {
+                width: 33%;
+            }
+            /* footer media queries */
             .footer {
                 flex-direction: row;
                 justify-content: space-between;
