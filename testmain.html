@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href='testmain.css'>
     <script src="https://kit.fontawesome.com/f203ca5a30.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -36,10 +37,92 @@
 
             <!-- search area / zone de recherche-->
             <form action="#" method="post">
-                <p id='searcharea'><i class="fas fa-map-marker-alt grey"></i><input type="search" name="city" id="city" value='Marseille, France'><button class="fas fa-search"></button>
+                <p id='searcharea'><i class="fas fa-map-marker-alt grey"></i><input type="search" name="city" id="city" value='Marseille, France'><button id='searchbutton'><span class='fas small fa-search'></span><span class='large'>Rechercher</span></button>
                 </p>
             </form>
+            <!-- filter area / les filtres -->
+            <div id="filterarea">
+                <h2>Filtres</h2>
+                <form action="#" method="post">
+                    <p id='filterform'>
+                        <label for="cheep" class='cheep filterbox'>
+                            <input type="checkbox" name="cheep" id="cheep" value='cheep' class='filter'>Economique
+                        </label>
+                        <label for="family" class='family filterbox'>
+                            <input type="checkbox" name="family" id="family" class='filter'>Familial
+                        </label>
+                        <label for="romantic" class='romantic filterbox'>
+                            <input type="checkbox" name="romantic" id="romantic" class='filter'>Romantique
+                        </label>
+                        <label for="animals" class="animals filterbox">
+                            <input type="checkbox" name="animals" id="animals" class='filter'>Animaux autorisés
+                        </label>
+                    </p>
+                </form>
+                <p id="info">
+                    Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </div>
+        <!-- les plus populaires -->
+        <aside id='popularaera' class='grey'>
+            <div id="populartitle">
+                <h1>Les plus populaires
+                    <span class="fas fa-chart-line"></span></h1>
+            </div>
+            <article>
+                <a href="#">
+                    <p class='image1'>a
+
+                    </p>
+
+                    <div class='populardetails'>
+                        <h3>Hôtel Le soleil du matin</h2>
+                            <p>Nuit à partir de 128€</p>
+                            <p><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i></p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <p class='image1'>a
+
+                    </p>
+                    <div class='populardetails'>
+                        <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                        <p>Nuit à partir de 71€</p>
+                        <p><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas grey fa-star"></i></p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <p class='image1'>a
+                    </p>
+                    <div class='populardetails'>
+                        <h3>Hôtel tout bleu et blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                        <p><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas grey fa-star"></i></p>
+                    </div>
+
+                </a>
+            </article>
+        </aside>
+        <section id="homing">
+            <div id="homingtitle">
+                <h1>Hébergements à Marseille</h1>
+            </div>
+            <article>
+                <a href="#">
+
+
+                    <div class='homingdetails'>
+                        <h3>Auberge de la Cannebière</h2>
+                            <p>Nuit à partir de 25€</p>
+                            <p><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas blue fa-star"></i><i class="fas grey fa-star"></i></p>
+                    </div>
+                </a>
+            </article>
+        </section>
     </main>
     <!-- footer -->
     <footer class='grey'>
@@ -80,9 +163,12 @@
             </li>
         </ul>
     </footer>
-
-
-
+    <script>
+        let testbutton = document.getElementById('searchbutton');
+        testbutton.addEventListener('click', function() {
+            console.log('good');
+        })
+    </script>
 </body>
 
 </html>

@@ -1,271 +1,469 @@
-                    /* ajout de la font Raleway */
-                    
-                    @font-face {
-                        font-family: 'ralewayregular';
-                        src: url('font/raleway-regular.ttf');
-                    }
-                    
-                    @font-face {
-                        font-family: 'ralewaybold';
-                        src: url('font/Raleway-Bold.ttf');
-                    }
-                    
-                    @font-face {
-                        font-family: 'ralewayblack';
-                        src: url('font/Raleway-Black.ttf');
-                    }
-                    /**************** Général: commun à tous **********************/
-                    
-                    body {
-                        background-color: white;
-                        font-family: 'ralewayregular';
-                    }
-                    
-                    h1 {
-                        font-family: 'ralewaybold';
-                        font-size: 1.33rem;
-                        margin: 0;
-                    }
-                    
-                    h2 {
-                        font-family: 'ralewaybold';
-                        font-size: 1.1rem;
-                    }
-                    
-                    p {
-                        margin: 0;
-                        font-size: 1rem;
-                    }
-                    
-                    a {
-                        text-decoration: none;
-                    }
-                    
-                    .grey {
-                        /* pour test */
-                        background-color: rgba(0, 255, 0, .5);
-                        /* background-color: #F2F2F2;*/
-                    }
-                    /******************** header *****************/
-                    
-                    header {
-                        width: 100%;
-                    }
-                    
-                    nav {
-                        height: 132px;
-                        width: 100%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: flex-end;
-                        text-align: center;
-                        /*pour test */
-                        background-color: rgba(255, 0, 0, .5);
-                    }
-                    
-                    #rightlinks {
-                        /*le bloc des liens hebergements/activités/s'inscrire */
-                        width: 150%;
-                        display: flex;
-                        flex-wrap: wrap-reverse;
-                        /*pour mettre s'inscrire au dessus*/
-                        justify-content: flex-end;
-                        /*pour mettre s'inscrire à droite*/
-                    }
-                    
-                    #rightlinks a {
-                        width: 50%;
-                        height: auto;
-                        font-family: 'ralewaybold';
-                        display: inline-block;
-                        color: #0065FC;
-                        padding-bottom: 17px;
-                        padding-top: 17px;
-                    }
-                    
-                    #rightlinks a:hover {
-                        color: black;
-                    }
-                    
-                    #connectlink {
-                        text-align: right;
-                        align-self: self-end;
-                    }
-                    /************** main *****************/
-                    
-                    #headmain {
-                        margin-top: 0px;
-                        /* pour test */
-                        background: rgba(0, 0, 255, .5);
-                    }
-                    
-                    #searcharea i {
-                        width: 12px;
-                        padding-top: 17px;
-                        padding-bottom: 17px;
-                        padding-left: 21px;
-                        padding-right: 21px;
-                        border-radius: 15px 0 0 15px;
-                    }
-                    
-                    #searcharea input[type='search'] {
-                        padding-top: 17px;
-                        padding-bottom: 17px;
-                        border-collapse: collapse;
-                        border-style: none;
-                        margin-left: auto;
-                        margin-right: auto;
-                        /*pour test*/
-                        background-color: rgba(255, 0, 0, .5);
-                    }
-                    /********** footer *****************/
-                    
-                    footer {
-                        display: flex;
-                        flex-direction: column;
-                        font-family: 'ralewayregular';
-                    }
-                    
-                    footer li {
-                        list-style: none;
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                        font-size: 1rem;
-                    }
-                    
-                    footer a {
-                        text-decoration: none;
-                        color: black;
-                    }
-                    /*************** media queries ****************/
-                    
-                    @media screen and (max-width: 767px) {
-                        body {
-                            /*pour test */
-                            background-image: url('Maquettes/iPhone\ 8\ -\ 1.png');
-                        }
-                        /* header media queries max-767*/
-                        #logo {
-                            position: absolute;
-                            top: 29px;
-                            width: 50%;
-                        }
-                        #logo img {
-                            position: relative;
-                            top: -5px;
-                            left: -33px;
-                        }
-                        #hominglink,
-                        #activitylink {
-                            border-bottom: 3px solid #0065FC;
-                        }
-                        #hominglink:hover,
-                        #activitylink:hover {
-                            border-bottom: 3px solid #DEEBFF;
-                        }
-                        /*main media queries max-767*/
-                        main {
-                            height: 3925px;
-                        }
-                        #headmain {
-                            margin-left: .7rem;
-                            margin-right: .7rem;
-                        }
-                        #headmain h1 {
-                            margin-top: 25px;
-                            margin-bottom: 12px;
-                        }
-                        #headmain p {
-                            margin-bottom: 13px;
-                        }
-                        #searcharea input[type='search'] {
-                            margin-top: 23px;
-                        }
-                        /* footer media queries */
-                        footer ul {
-                            position: relative;
-                            top: 15px;
-                            left: -20px;
-                            width: 100%;
-                        }
-                    }
-                    
-                    @media screen and (min-width: 768px) {
-                        body {
-                            /* pour test */
-                            background-image: url('Maquettes/Desktop\ -\ 1.png');
-                        }
-                        /* header media queries*/
-                        nav {
-                            display: flex;
-                            justify-content: space-between;
-                        }
-                        nav div {
-                            display: inline-block;
-                        }
-                        #logo {
-                            position: unset;
-                            /*suppression de la propriété position */
-                            width: 150px;
-                            height: 131px;
-                            /*ex:131*/
-                        }
-                        #logo img {
-                            position: relative;
-                            left: 16px;
-                            top: 33px;
-                        }
-                        #rightlinks {
-                            /*le bloc des liens hebergements/activités/s'inscrire */
-                            min-width: fit-content;
-                            width: 33%;
-                            display: flex;
-                            flex-wrap: nowrap;
-                        }
-                        #rightlinks a {
-                            min-width: 150px;
-                            padding-top: 35px;
-                            padding-bottom: 65px;
-                            /*ex:65*/
-                        }
-                        #hominglink,
-                        #activitylink {
-                            border-top: 3px solid #0065FC;
-                        }
-                        #hominglink:hover,
-                        #activitylink:hover {
-                            border-top: 3px solid #DEEBFF;
-                        }
-                        #connectlink {
-                            text-align: left;
-                            text-indent: 25px;
-                        }
-                        /********************************************************************/
-                        /* main media queries */
-                        main {
-                            height: 1520px;
-                        }
-                        #headmain {
-                            text-indent: 3rem;
-                        }
-                        #searcharea input[type='search'] {
-                            margin-top: 14px;
-                        }
-                        /********************************************************************/
-                        /* footer media queries */
-                        footer {
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-                        footer ul {
-                            position: relative;
-                            text-align: left;
-                            top: 20px;
-                            width: 35%;
-                            margin-right: 10%;
-                        }
-                        footer li {
-                            /*pour les test */
-                            background-color: rgba(255, 0, 0, .5);
-                        }
-                    }
+    /* ajout de la font Raleway */
+    
+    @font-face {
+        font-family: 'ralewayregular';
+        src: url('font/raleway-regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'ralewaybold';
+        src: url('font/Raleway-Bold.ttf');
+    }
+    
+    @font-face {
+        font-family: 'ralewayblack';
+        src: url('font/Raleway-Black.ttf');
+    }
+    /**************** Général: commun à tous **********************/
+    
+    body {
+        background-color: white;
+        font-family: 'ralewayregular';
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'ralewaybold';
+    }
+    
+    h1,
+    #populartitle span {
+        font-size: 1.33rem;
+        margin-right: .7rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    h3 {
+        font-size: .95rem;
+    }
+    
+    p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .grey {
+        /* pour test */
+        background-color: rgba(0, 255, 0, .5);
+        /* background-color: #F2F2F2;*/
+    }
+    
+    .blue {
+        color: #0065FC;
+    }
+    /******************** header *****************/
+    
+    header {
+        width: 100%;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        text-align: center;
+    }
+    
+    #rightlinks {
+        /*le bloc des liens hebergements/activités/s'inscrire */
+        width: 150%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        /*pour mettre s'inscrire au dessus*/
+        justify-content: flex-end;
+        /*pour mettre s'inscrire à droite*/
+    }
+    
+    #rightlinks a {
+        width: 50%;
+        height: auto;
+        font-family: 'ralewaybold';
+        display: inline-block;
+        color: #0065FC;
+        padding-bottom: 17px;
+        padding-top: 17px;
+    }
+    
+    #rightlinks a:hover {
+        color: black;
+    }
+    
+    #connectlink {
+        text-align: right;
+        align-self: self-end;
+    }
+    /************** main *****************/
+    
+    #headmain {
+        margin-top: 0px;
+        /* pour test */
+        background: rgba(0, 0, 255, .5);
+    }
+    
+    #searcharea {
+        max-width: 22rem;
+    }
+    
+    #searcharea>i {
+        width: 12px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 1.3rem;
+        padding-right: 1.2rem;
+        border-radius: 15px 0 0 15px;
+        /*pour test background color:#0065FC*/
+        background-color: red;
+    }
+    
+    #searcharea>input[type='search'] {
+        font-family: 'ralewaybold';
+        font-size: 1.15rem;
+        text-align: left;
+        text-indent: 1rem;
+        padding-top: 10.4px;
+        padding-bottom: 13.2px;
+        /*border-collapse: collapse;*/
+        border: none;
+        /*on supprime les bordures par défaut */
+        border-top: 3px solid#F2F2F2;
+        border-bottom: 3px solid #F2F2F2;
+        /*pour test*/
+        background-color: green;
+    }
+    
+    #searchbutton {
+        width: fit-content;
+        border: none;
+        /*background-color: #0065FC;*/
+        color: #DEEBFF;
+        /*pour test*/
+        background-color: purple;
+    }
+    
+    #filterarea {
+        margin-top: 35px;
+        margin-left: .2rem;
+        margin-right: .2rem;
+        margin-bottom: 74px;
+        /*espace avec + populaires */
+    }
+    
+    #filterarea h2 {
+        margin-bottom: 16px;
+    }
+    
+    #filterform {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #filterform label {
+        font-family: 'ralewaybold';
+        background-color: teal;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 2.4rem;
+        padding-right: .8rem;
+        margin-bottom: 13px;
+        margin-right: .7rem;
+        border: 3px solid #F2F2F2;
+        border-radius: 25px;
+        /* pour les test */
+        opacity: 50%;
+    }
+    
+    #info::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        opacity: 50%;
+        content: "\f05a";
+        font-size: 1.5rem;
+        padding-right: 0.25rem;
+    }
+    /* aside plus populaires */
+    
+    #populararea {
+        margin-right: 0 .7rem;
+        margin-left: 0.7rem;
+    }
+    
+    #populartitle {
+        margin-bottom: 30px;
+    }
+    
+    #populartitle span {
+        color: black;
+        padding: unset;
+        /* height: 24.8px;*/
+    }
+    
+    #popularaera article {
+        width: 20rem;
+        margin-left: 1rem;
+        border-radius: 15px;
+        /* pour test */
+        border: 6px solid white;
+        margin-bottom: 2px;
+        /*background-color: rgba(0, 0, 255, .5);*/
+    }
+    
+    #popularaera article a {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .image1 {
+        width: 7rem;
+        height: 135px;
+    }
+    
+    .populardetails,
+    .homingdetails {
+        width: 10.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+    }
+    
+    .populardetails p {
+        font-size: .8rem;
+    }
+    
+    .populardetails i {
+        font-size: .7rem;
+    }
+    
+    aside {
+        margin-bottom: 80px;
+    }
+    /* Section hébergements */
+    
+    section {
+        margin-left: .7rem;
+    }
+    
+    homing:nth-child(1) {
+        background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    }
+    
+    homing:nth-child(2) {
+        background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    }
+    
+    .homingdetails {
+        background-color: white;
+    }
+    /********** footer *****************/
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-family: 'ralewayregular';
+    }
+    
+    footer li {
+        list-style: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+    /*************** media queries ****************/
+    
+    @media screen and (max-width: 767px) {
+        body {
+            /*pour test */
+            background-image: url('Maquettes/iPhone\ 8\ -\ 1.png');
+        }
+        /* header media queries max-767*/
+        header {
+            margin-bottom: 32px;
+        }
+        nav {
+            height: 132px;
+        }
+        #logo {
+            position: absolute;
+            top: 29px;
+            width: 50%;
+        }
+        #logo img {
+            position: relative;
+            top: -5px;
+            left: -33px;
+        }
+        #hominglink,
+        #activitylink {
+            border-bottom: 3px solid #0065FC;
+        }
+        #hominglink:hover,
+        #activitylink:hover {
+            border-bottom: 3px solid #DEEBFF;
+        }
+        /*main media queries max-767*/
+        main {
+            height: 3925px;
+        }
+        #headmain {
+            margin-left: .7rem;
+            margin-right: .7rem;
+        }
+        #headmain h1 {
+            margin-bottom: 12px;
+        }
+        #headmain p {
+            margin-bottom: 13px;
+        }
+        #searcharea {
+            margin-top: 33px;
+            position: relative;
+        }
+        #searcharea>input[type='search'] {
+            width: 16rem;
+            z-index: 1;
+        }
+        #searchbutton {
+            z-index: 2;
+            width: fit-content;
+            height: 10px;
+            /*pour pouvoir le positionner au-dessus de l'input */
+            padding-top: 15.1px;
+            padding-bottom: 15.1px;
+            padding-left: 17px;
+            padding-right: 17px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        #searchbutton .large {
+            display: none;
+        }
+        #searchbutton .small {
+            background-color: yellow;
+            /* z-index: 3;
+        position: absolute;
+        top: 0;
+        right: 2rem;*/
+        }
+        /* footer media queries -767*/
+        footer ul {
+            position: relative;
+            top: 15px;
+            left: -20px;
+            width: 100%;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        body {
+            /* pour test */
+            background-image: url('Maquettes/Desktop\ -\ 1.png');
+        }
+        /* header media queries + 768*/
+        nav {
+            height: 112px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav div {
+            display: inline-block;
+        }
+        #logo {
+            position: unset;
+            /*suppression de la propriété position */
+            width: 150px;
+            height: 112px;
+            /*ex:131*/
+        }
+        #logo img {
+            position: relative;
+            left: 16px;
+            top: 33px;
+        }
+        #rightlinks {
+            /*le bloc des liens hebergements/activités/s'inscrire */
+            min-width: fit-content;
+            width: 33%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        #rightlinks a {
+            min-width: 150px;
+            padding-top: 35px;
+            padding-bottom: 65px;
+            /*ex:65*/
+        }
+        #hominglink,
+        #activitylink {
+            border-top: 3px solid #0065FC;
+        }
+        #hominglink:hover,
+        #activitylink:hover {
+            border-top: 3px solid #DEEBFF;
+        }
+        #connectlink {
+            text-align: left;
+            text-indent: 25px;
+        }
+        /********************************************************************/
+        /* main media queries +768*/
+        main {
+            height: 1520px;
+        }
+        #headmain {
+            text-indent: 3rem;
+        }
+        #searcharea input[type='search'] {
+            margin-top: 14px;
+            width: 14.5rem;
+        }
+        #searcharea {
+            display: flex;
+        }
+        #searchbutton {
+            text-indent: .45rem;
+            width: 8.4rem;
+            border-radius: 0 15px 15px 0;
+        }
+        #searchbutton .small {
+            display: none;
+        }
+        .large {
+            font-family: 'ralewaybold';
+            font-size: 1.25rem;
+            padding-top: 10px;
+            padding-bottom: 16px;
+            padding-left: 0.6rem;
+            padding-right: .6rem;
+        }
+        /********************************************************************/
+        /* footer media queries +768*/
+        footer {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        footer ul {
+            position: relative;
+            text-align: left;
+            top: 20px;
+            width: 35%;
+            margin-right: 10%;
+        }
+        footer li {
+            /*pour les test */
+            background-color: rgba(255, 0, 0, .5);
+        }
+    }
