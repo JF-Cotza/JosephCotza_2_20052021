@@ -223,9 +223,8 @@ nav {
     /* height: 24.8px;*/
 }
 
-#popularaera article {
-    width: 20rem;
-    margin-left: 1rem;
+#popularaera a {
+    width: 20.3rem;
     border-radius: 15px;
     /* pour test */
     border: 6px solid white;
@@ -233,19 +232,29 @@ nav {
     /*background-color: rgba(0, 0, 255, .5);*/
 }
 
-#popularaera article a {
+#popularaera article {
     display: flex;
-    justify-content: space-around;
 }
 
-.image1 {
-    width: 7rem;
-    height: 135px;
+#flex {
+    flex-direction: column;
+}
+
+#popularlinks a {
+    background-size: contain;
+    display: inline-block;
+}
+
+#popularaera article {
+    justify-content: flex-end;
+}
+
+#popularaera article a {
+    width: 60%;
 }
 
 .populardetails,
 .homingdetails {
-    width: 10.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -253,11 +262,13 @@ nav {
 }
 
 .populardetails p {
+    height: 20px;
     font-size: .8rem;
 }
 
-.populardetails i {
+.populardetails p i {
     font-size: .7rem;
+    font-weight: 900;
 }
 
 aside {
@@ -269,14 +280,6 @@ aside {
 
 section {
     margin-left: .7rem;
-}
-
-homing:nth-child(1) {
-    background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-}
-
-homing:nth-child(2) {
-    background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
 }
 
 .homingdetails {
@@ -336,6 +339,9 @@ footer a {
     #activitylink:hover {
         border-bottom: 3px solid #DEEBFF;
     }
+    .populardetails {
+        width: 60%;
+    }
     /*main media queries max-767*/
     main {
         height: 3900px;
@@ -373,14 +379,16 @@ footer a {
     }
     #searchbutton .small {
         background-color: yellow;
-        /* z-index: 3;
-        position: absolute;
-        top: 0;
-        right: 2rem;*/
     }
     /* main -767 */
-    #flex {
-        flex-direction: column;
+    #popularlinks a:nth-child(1) {
+        background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    }
+    #popularlinks a:nth-child(2) {
+        background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    }
+    #popularlinks a:nth-child(3) {
+        background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
     }
     /* footer media queries -767*/
     footer {
