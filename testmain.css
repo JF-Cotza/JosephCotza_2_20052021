@@ -199,6 +199,10 @@ nav {
     padding-right: 0.25rem;
 }
 
+#flex {
+    display: flex;
+}
+
 
 /* aside plus populaires */
 
@@ -209,11 +213,13 @@ nav {
 
 #populartitle {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #populartitle span {
     color: black;
-    padding: unset;
+    padding-top: 15px;
     /* height: 24.8px;*/
 }
 
@@ -372,6 +378,10 @@ footer a {
         top: 0;
         right: 2rem;*/
     }
+    /* main -767 */
+    #flex {
+        flex-direction: column;
+    }
     /* footer media queries -767*/
     footer {
         margin-left: .7rem;
@@ -473,6 +483,18 @@ footer a {
         padding-bottom: 16px;
         padding-left: 0.6rem;
         padding-right: .6rem;
+    }
+    #flex {
+        flex-direction: row;
+    }
+    #popularaera {
+        flex: 1;
+        order: 2;
+        /*permet de placer la popularaera aprés la zone homing */
+    }
+    #homing {
+        flex: 2;
+        order: 1
     }
     /********************************************************************/
     /* footer media queries +768*/
