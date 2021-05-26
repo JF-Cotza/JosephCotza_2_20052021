@@ -1,43 +1,78 @@
-/************* média queries ***********/
-
-
-/* petits écrans */
-
-@media screen and (max-width: 767px) {
-    body {
-        /*pour test */
-        background-image: url('../Maquettes/iPhone\ 8\ -\ 1.png');
-    }
-    /**** header ****/
-    header {
-        margin-bottom: 32px;
-    }
-    /* placement du logo au même niveau que les autres lien */
-    #logo {
-        position: absolute;
-        top: 29px;
-        width: 50%;
-    }
-    #logo img {
-        position: relative;
-        top: -5px;
-        left: -26px;
-    }
-    /* la nav */
-    nav {
-        height: 132px;
-    }
-    #homing_link,
-    #activity_link {
-        border-bottom: 3px solid #0065FC;
-    }
-    #homing_link:hover,
-    #activity_link:hover {
-        border-bottom: 3px solid #DEEBFF;
-    }
-    /**** main ****/
-    main {
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
-    }
-}
+        /************* média queries ***********/
+        /* petits écrans */
+        
+        @media screen and (max-width: 767px) {
+            body {
+                /*pour test */
+                background-image: url('../Maquettes/iPhone\ 8\ -\ 1.png');
+            }
+            /**** header ****/
+            header {
+                margin-bottom: 32px;
+            }
+            /* placement du logo au même niveau que les autres lien */
+            #logo {
+                position: absolute;
+                top: 29px;
+                width: 50%;
+            }
+            #logo img {
+                position: relative;
+                top: -5px;
+                left: -26px;
+            }
+            /* la nav */
+            nav {
+                height: 132px;
+            }
+            #homing_link,
+            #activity_link {
+                border-bottom: 3px solid #0065FC;
+            }
+            #homing_link:hover,
+            #activity_link:hover {
+                border-bottom: 3px solid #DEEBFF;
+            }
+            /**** main ****/
+            main {
+                margin-left: 1.2rem;
+                margin-right: 1.2rem;
+            }
+            main h1 {
+                box-sizing: content-box;
+                margin: collapse;
+            }
+            main p {
+                box-sizing: content-box;
+            }
+            #search_area {
+                margin-top: 35px;
+                display: flex;
+                /* pour supprimer les 'marges générés par le positionnement*/
+            }
+            #search_area input {
+                padding: 13px 0px 13px 0;
+                width: 17rem;
+                z-index: 1;
+                flex-shrink: 0.3;
+                /* si on ne met pas le shrink, l'input rétrécit et le boutton ne le recouvre pas */
+                position: relative;
+            }
+            #search_button {
+                z-index: 2;
+                position: relative;
+                top: 0;
+                left: -1.9rem;
+                /*pour pouvoir positionner le bouton, il faut :
+                - z-index supérieur à celui qu'il recouvre
+                - une position
+                */
+                border: none;
+                border-radius: 15px;
+                background-color: #0065FC;
+                padding: 15.8px 1.1rem;
+            }
+            #search_button .large {
+                display: none;
+            }
+        }

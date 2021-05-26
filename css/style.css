@@ -19,7 +19,7 @@
 /************ Générique *********************/
 
 .test {
-    background-color: rgba(255, 0, 0, .5);
+    background-color: rgba(255, 0, 0, .3);
 }
 
 body {
@@ -38,12 +38,20 @@ h1 {
     margin-right: 0.7rem;
 }
 
+h2 {
+    font-size: 1.1rem;
+}
+
 a {
     text-decoration: none;
 }
 
+.grey {
+    background-color: #F2F2F2;
+}
 
-/* header */
+
+/**** header ****/
 
 header {
     width: 100%;
@@ -88,4 +96,76 @@ nav {
 }
 
 
-/* main */
+/**** main ****/
+
+
+/* search area */
+
+#search_area span {
+    /*total padding 34 */
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    border-radius: 15px 0 0 15px;
+}
+
+#search_area input {
+    border-top: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    border-left: 0;
+    border-right: 0;
+    font-family: 'ralewaybold';
+    text-indent: 1rem;
+    opacity: .3;
+}
+
+#search_button {
+    color: #DEEBFF;
+}
+
+
+/* filter area */
+
+#filter_area {
+    margin-top: 35px;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    margin-bottom: 74px;
+    /*espace avec + populaires */
+}
+
+
+/*
+#filterform {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filterform label {
+    font-family: 'ralewaybold';
+    background-color: teal;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 2.4rem;
+    padding-right: .8rem;
+    margin-bottom: 13px;
+    margin-right: .7rem;
+    border: 3px solid #F2F2F2;
+    border-radius: 25px;
+}
+
+#info::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 50%;
+    content: "\f05a";
+    font-size: 1.5rem;
+    padding-right: 0.25rem;
+}
+
+#flex {
+    display: flex;
+}
+
+*/

@@ -55,4 +55,26 @@
         margin-left: 3.4rem;
         margin-right: 1rem;
     }
+    #search_area {
+        margin-top: 18px;
+    }
+    #search_area input {
+        padding: 13.4px 0px 12.6px 0;
+        width: 14.5rem;
+    }
+    #search_button .small {
+        display: none;
+    }
+    #search_button {
+        font-family: 'ralewaybold';
+        font-size: 1.1rem;
+        background-color: blue;
+        border: none;
+        opacity: .7;
+        padding-top: 14.49px;
+        padding-bottom: 15.21px;
+        padding-right: 1.2rem;
+        border-radius: 0 15px 15px 0;
+        text-indent: .5rem;
+    }
 }
