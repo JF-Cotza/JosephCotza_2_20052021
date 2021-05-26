@@ -1,0 +1,58 @@
+/* grands écrans */
+
+@media screen and (min-width: 768px) {
+    body {
+        /* pour test */
+        background-image: url('../Maquettes/Desktop\ -\ 1.png');
+    }
+    /**** header ****/
+    nav {
+        height: 112px;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav div {
+        display: inline-block;
+    }
+    /*positionnement logo */
+    #logo {
+        position: unset;
+        /*suppression de la propriété position */
+        width: 150px;
+        height: 112px;
+    }
+    #logo img {
+        position: relative;
+        left: 1.7rem;
+        top: 14px;
+    }
+    /* nav lien : le bloc des liens hebergements/activités/s'inscrire */
+    #right_links {
+        min-width: fit-content;
+        width: 33%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #right_links a {
+        min-width: 150px;
+        padding-top: 45px;
+        padding-bottom: 75px;
+    }
+    #homing_link,
+    #activity_link {
+        border-top: 3px solid #0065FC;
+    }
+    #homing_link:hover,
+    #activity_link:hover {
+        border-top: 3px solid #DEEBFF;
+    }
+    #connect_link {
+        text-align: left;
+        text-indent: 25px;
+    }
+    /**** main ****/
+    main {
+        margin-left: 3.4rem;
+        margin-right: 1rem;
+    }
+}

@@ -1,5 +1,5 @@
     /* ajout de la police Raleway */
-    
+    /*    
     @font-face {
         font-family: 'ralewayregular';
         src: url('font/raleway-regular.ttf');
@@ -13,19 +13,21 @@
     @font-face {
         font-family: 'ralewayblack';
         src: url('font/Raleway-Black.ttf');
-    }
+    }*/
     /**************** Général: commun à tous **********************/
-    
+    /*
     body {
         background-color: white;
         font-family: 'ralewayregular';
     }
+    
     
     h1,
     h2,
     h3 {
         font-family: 'ralewaybold';
     }
+    */
     
     h1,
     #populartitle span {
@@ -63,7 +65,7 @@
         color: #0065FC;
     }
     /******************** header ok *****************/
-    
+    /*
     header {
         width: 100%;
     }
@@ -76,15 +78,15 @@
         text-align: center;
     }
     
-    #rightlinks {
-        /*le bloc des liens hebergements/activités/s'inscrire */
-        width: 150%;
+    #rightlinks {*/
+    /*le bloc des liens hebergements/activités/s'inscrire */
+    /*   width: 150%;
         display: flex;
-        flex-wrap: wrap-reverse;
-        /*pour mettre s'inscrire au dessus*/
-        justify-content: flex-end;
-        /*pour mettre s'inscrire à droite*/
-    }
+        flex-wrap: wrap-reverse;*/
+    /*pour mettre s'inscrire au dessus*/
+    /*  justify-content: flex-end;*/
+    /*pour mettre s'inscrire à droite*/
+    /*}
     
     #rightlinks a {
         width: 50%;
@@ -103,7 +105,7 @@
     #connectlink {
         text-align: right;
         align-self: self-end;
-    }
+    }*/
     /************** main *****************/
     
     #headmain {
@@ -329,12 +331,12 @@
     /*************** media queries ****************/
     
     @media screen and (max-width: 767px) {
-        body {
-            /*pour test */
+        /*body {
+           
             background-image: url('Maquettes/iPhone\ 8\ -\ 1.png');
-        }
+        }*/
         /* header media queries max-767 ok*/
-        header {
+        /*header {
             margin-bottom: 32px;
         }
         nav {
@@ -357,16 +359,16 @@
         #hominglink:hover,
         #activitylink:hover {
             border-bottom: 3px solid #DEEBFF;
-        }
+        }*/
         .populardetails {
             width: 60%;
         }
         /*main media queries max-767*/
-        main {
+        /* main {
             height: 3900px;
             margin-left: 1.2rem;
             margin-right: 1.2rem;
-        }
+        }*/
         #headmain h1 {
             margin-bottom: 15px;
         }
@@ -463,12 +465,12 @@
     }
     
     @media screen and (min-width: 768px) {
-        body {
-            /* pour test */
+        /*body {
+            
             background-image: url('Maquettes/Desktop\ -\ 1.png');
-        }
+        }*/
         /* header media queries + 768 ok*/
-        nav {
+        /* nav {
             height: 112px;
             display: flex;
             justify-content: space-between;
@@ -479,10 +481,10 @@
         #logo {
             position: unset;
             /*suppression de la propriété position */
-            width: 150px;
+        /*   width: 150px;
             height: 112px;
             /*ex:131*/
-        }
+        /*}
         #logo img {
             position: relative;
             left: 16px;
@@ -490,7 +492,7 @@
         }
         #rightlinks {
             /*le bloc des liens hebergements/activités/s'inscrire */
-            min-width: fit-content;
+        /*   min-width: fit-content;
             width: 33%;
             display: flex;
             flex-wrap: nowrap;
@@ -498,9 +500,9 @@
         #rightlinks a {
             min-width: 150px;
             padding-top: 35px;
-            padding-bottom: 65px;
-            /*ex:65*/
-        }
+            padding-bottom: 65px;*/
+        /*ex:65*/
+        /*}
         #hominglink,
         #activitylink {
             border-top: 3px solid #0065FC;
@@ -512,14 +514,14 @@
         #connectlink {
             text-align: left;
             text-indent: 25px;
-        }
+        }*/
         /********************************************************************/
         /* main media queries +768*/
-        main {
+        /*main {
             height: 1520px;
             margin-left: 3.4rem;
             margin-right: 3rem;
-        }
+        }*/
         #headermain h1 {
             display: inline-block;
             margin-bottom: 0;

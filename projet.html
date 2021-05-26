@@ -11,15 +11,65 @@
     <!-- trois fichier à fusionner à la fin -->
     <link rel="stylesheet" href="css/style.css">
     <!-- css générique -->
-    <link rel="stylesheet" href="css/767.css">
+    <link rel="stylesheet" href="css/767.css" media="screen and (max-width: 767px)">
     <!-- petit css -->
-    <link rel="stylesheet" href="css/768.css">
+    <link rel="stylesheet" href="css/768.css" media="screen and (min-width: 768px)">
     <!-- grand css-->
     <title>Reservia</title>
 </head>
 
 <body>
-
+    <!-- header ok -->
+    <header>
+        <nav>
+            <!-- le logo -->
+            <a href="#" id='logo'>
+                    <!-- renvoie vers la page d'accueil -->
+                    <img src="images/logo/Reservia.svg" alt="logo de reservia">
+                </a>
+            <!--  les liens principaux -->
+            <div id='right_links'>
+                <a href="#homing" id='homing_link'>Hébergements</a>
+                <a href="#activity" id='activity_link'>Activités</a>
+                <a href="#" id='connect_link'>S'inscrire</a>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class='test'>
+        <div id='head_main'>
+            <div>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine pature</p>
+            </div>
+            <!-- search area / zone de recherche-->
+            <form action="#" method="post">
+                <p id='search_area'><i class="fas fa-map-marker-alt grey"></i><input type="search" name="city" id="city" value='Marseille, France'><button id='searchbutton'><span class='fas small fa-search'></span><span class='large'>Rechercher</span></button>
+                </p>
+            </form>
+            <!-- filter area / les filtres -->
+            <div id="filter_area">
+                <h2>Filtres</h2>
+                <form action="#" method="post">
+                    <p id='filterform'>
+                        <label for="cheep" class='cheep filterbox'>
+                            <input type="checkbox" name="cheep" id="cheep" value='cheep' class='filter'>Economique
+                        </label>
+                        <label for="family" class='family filterbox'>
+                            <input type="checkbox" name="family" id="family" class='filter'>Familial
+                        </label>
+                        <label for="romantic" class='romantic filterbox'>
+                            <input type="checkbox" name="romantic" id="romantic" class='filter'>Romantique
+                        </label>
+                        <label for="animals" class="animals filterbox">
+                            <input type="checkbox" name="animals" id="animals" class='filter'>Animaux autorisés
+                        </label>
+                    </p>
+                </form>
+                <p id="info">
+                    Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </div>
 </body>
 
 </html>

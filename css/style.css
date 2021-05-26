@@ -1,0 +1,91 @@
+/* ajout de la police Raleway */
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../font/raleway-regular.ttf');
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../font/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../font/Raleway-Black.ttf');
+}
+
+
+/************ Générique *********************/
+
+.test {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+body {
+    background-color: white;
+    font-family: 'ralewayregular';
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'ralewaybold';
+}
+
+h1 {
+    font-size: 1.33rem;
+    margin-right: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* header */
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    text-align: center;
+}
+
+#right_links {
+    /*le bloc des liens hebergements/activités/s'inscrire */
+    width: 150%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /*pour mettre s'inscrire au dessus*/
+    justify-content: flex-end;
+    /*pour mettre s'inscrire à droite*/
+}
+
+#right_links a {
+    width: 50%;
+    height: auto;
+    font-family: 'ralewaybold';
+    display: inline-block;
+    color: #0065FC;
+    padding-bottom: 15px;
+    padding-top: 19px;
+}
+
+#right_links a:hover {
+    color: black;
+}
+
+#connect_link {
+    text-align: right;
+    align-self: self-end;
+    margin-right: 1.3rem;
+}
+
+
+/* main */
