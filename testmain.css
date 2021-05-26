@@ -216,7 +216,8 @@
     }
     
     #popularaera a,
-    #hominglinks a {
+    #homingplaces a,
+    #activityplaces a {
         width: 20.3rem;
         border-radius: 15px;
         /* pour test */
@@ -275,7 +276,7 @@
         margin-left: .7rem;
     }
     
-    #hominglinks a {
+    #homingplaces a {
         background-size: contain;
         display: inline-block;
         height: 200px;
@@ -291,6 +292,21 @@
         /* background-color: white; */
         /*pour test */
         background-color: red;
+    }
+    /* section activité*/
+    
+    .activitydetails {
+        background-color: green;
+    }
+    
+    #activityplaces a {
+        background-size: contain;
+        display: inline-block;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: crimson;
     }
     /********** footer *****************/
     
@@ -393,23 +409,41 @@
         #popularlinks a:nth-child(3) {
             background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
         }
-        #hominglinks a:nth-child(1) {
+        #homingplaces a:nth-child(1) {
             background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
         }
-        #hominglinks a:nth-child(2) {
+        #homingplaces a:nth-child(2) {
             background-image: url('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
         }
-        #hominglinks a:nth-child(3) {
+        #homingplaces a:nth-child(3) {
             background-image: url('images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
         }
-        #hominglinks a:nth-child(4) {
+        #homingplaces a:nth-child(4) {
             background-image: url('images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
         }
-        #hominglinks a:nth-child(5) {
+        #homingplaces a:nth-child(5) {
             background-image: url('images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
         }
-        #hominglinks a:nth-child(6) {
+        #homingplaces a:nth-child(6) {
             background-image: url('images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+        }
+        #activityplaces a:nth-child(1) {
+            background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+        }
+        #activityplaces a:nth-child(2) {
+            background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+        }
+        #activityplaces a:nth-child(3) {
+            background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+        }
+        #activityplaces a:nth-child(4) {
+            background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+        }
+        #activityplaces a:nth-child(5) {
+            background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+        }
+        #activityplaces a:nth-child(6) {
+            background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
         }
         /* footer media queries -767*/
         footer {
