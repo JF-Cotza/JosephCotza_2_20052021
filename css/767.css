@@ -45,6 +45,7 @@
             main p {
                 box-sizing: content-box;
             }
+            /* search area */
             #search_area {
                 margin-top: 35px;
                 display: flex;
@@ -74,5 +75,12 @@
             }
             #search_button .large {
                 display: none;
+            }
+            /*filter area*/
+            #filter_area h2 {
+                margin-top: 35px;
+            }
+            #info {
+                margin-top: 30px;
             }
         }

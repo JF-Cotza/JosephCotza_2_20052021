@@ -55,6 +55,7 @@
         margin-left: 3.4rem;
         margin-right: 1rem;
     }
+    /* search area */
     #search_area {
         margin-top: 18px;
     }
@@ -76,5 +77,21 @@
         padding-right: 1.2rem;
         border-radius: 0 15px 15px 0;
         text-indent: .5rem;
+    }
+    /* filter area */
+    #filter_area {
+        display: flex;
+    }
+    #filter_area h2 {
+        padding-top: 19px;
+        padding-bottom: 15px;
+        margin-left: .2rem;
+        margin-right: 1rem;
+    }
+    #filter_form label {
+        margin: 0 .5rem;
+    }
+    #info i {
+        margin-left: .3rem;
     }
 }
