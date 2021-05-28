@@ -12,16 +12,19 @@
     header {
         margin-bottom: 32px;
     }
+    header a {
+        height: 65px;
+    }
     /* placement du logo au même niveau que les autres lien */
     #logo {
         position: absolute;
-        top: 29px;
+        top: 0px;
         width: 50%;
     }
     #logo img {
         position: relative;
-        top: -5px;
-        left: -26px;
+        top: 25px;
+        left: -25px;
     }
     /* la nav */
     nav {
