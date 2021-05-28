@@ -193,7 +193,24 @@
     #homing_places a:nth-child(6) article {
         background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
     }
-    /**************************
+    #more {
+        margin-top: 34px;
+        font-family: 'ralewaybold';
+        font-size: 1.1rem;
+    }
+    #more:hover {
+        color: green;
+    }
+    /************************** activty area ***********/
+    #activity_area .h1,
+    #activity_places {
+        margin-left: 1.3rem;
+        margin-right: 1rem;
+        width: auto;
+    }
+    #activity_area .h1 {
+        margin-top: 37px;
+    }
     #activity_places a:nth-child(1) article {
         background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
     }

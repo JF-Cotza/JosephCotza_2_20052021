@@ -291,6 +291,11 @@ aside {
 }
 
 
+/* activity area */
+
+#activity area .h1 {}
+
+
 /********** footer *****************/
 
 footer {
