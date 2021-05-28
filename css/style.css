@@ -33,7 +33,8 @@ h3 {
     font-family: 'ralewaybold';
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 1.33rem;
     margin-right: 0.7rem;
 }
@@ -42,14 +43,26 @@ h2 {
     font-size: 1.1rem;
 }
 
+h3 {
+    font-size: .95rem;
+}
+
 a {
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.blue {
+    color: #0065FC;
 }
 
 .grey {
     background-color: #F2F2F2;
     /*test */
-    opacity: 50%;
+    /* opacity: 50%;*/
 }
 
 
@@ -57,6 +70,7 @@ a {
 
 header {
     width: 100%;
+    overflow: auto;
 }
 
 nav {
@@ -77,7 +91,7 @@ nav {
     /*pour mettre s'inscrire à droite*/
 }
 
-#right_links a {
+#right_links li {
     width: 50%;
     height: auto;
     font-family: 'ralewaybold';
@@ -87,7 +101,7 @@ nav {
     padding-top: 19px;
 }
 
-#right_links a:hover {
+#right_links li:hover {
     color: black;
 }
 
@@ -119,7 +133,6 @@ nav {
     border-right: 0;
     font-family: 'ralewaybold';
     text-indent: 1rem;
-    opacity: .3;
 }
 
 #search_button {
@@ -144,31 +157,22 @@ nav {
     font-family: 'ralewaybold';
     display: inline-block;
     padding-right: 1rem;
-    border: 3px solid #F2F2F2;
-    border-left: 3px solid #DEEBFF;
     border-radius: 25px;
     margin: 4px 0;
     color: black;
+}
+
+.filter+label {
+    border-top: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    border-right: 3px solid #F2F2F2;
+    border-left: 3px solid #DEEBFF;
     background-color: white;
 }
 
 .filter:checked+label {
-    Ultimate CSS Gradient Generator A powerful Photoshop-like CSS gradient editor from ColorZilla. For Firefox For Chrome Gradient Generator Name: hue/saturation reverse import css import image Stops Opacity: Location: % Color: Location: % Sponsor ads via Carbon Download 10 FREE images from Shutterstock’s world-class library with a 1-month free trial. ads via Carbon Preview Orientation: Size: x IE CSS switch to scss
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1fc625+52,2989d8+75,d2db29+75,f4bc84+100&1+0,0.61+37,1+100 */
-    background: -moz-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(31, 166, 70, 0.61) 37%, rgba(31, 198, 37, 0.7) 52%, rgba(210, 219, 41, 0.84) 75%, rgba(244, 188, 132, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(31, 166, 70, 0.61) 37%, rgba(31, 198, 37, 0.7) 52%, rgba(210, 219, 41, 0.84) 75%, rgba(244, 188, 132, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(30, 87, 153, 1) 0%, rgba(31, 166, 70, 0.61) 37%, rgba(31, 198, 37, 0.7) 52%, rgba(210, 219, 41, 0.84) 75%, rgba(244, 188, 132, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#f4bc84', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-    Current gradient has opacity,
-    switching color format to 'rgba' Color format: Comments Link to, save or share the current gradient using its permalink. StumbleUpon 27K Browser compatibility IE Edge Firefox Chrome Safari Opera iOS Safari Android Browser Chrome for Android 6 - 8 4 - 9 4 - 5 3.2 - 4.3 2.1 - 3 9 3.6 - 15 10 - 25 5.1 - 6 11.1 - 11.5 5.1 - 6.1 4 - 4.3 10+ 12+ 16+ 26+ 6.1+ 12+ 7.1+ 4.4+ 46+ IE9 support (?) Maximize compatibility Links to CSS gradients documentation: W3C, Firefox, Safari and Chrome (Webkit), Internet Explorer and Opera [2]. What's new
- » Don't generate older Opera, IE10 Preview, Webkit syntax by default (turn back on using "Maximize compatibility" mode)
- » Browser Compatibility panel showing supported browser versions, usage stats etc. » Support for radial and diagonal linear gradients » Support for full multi-stop gradients in Internet Explorer 9 (IE9) using SVG » Support for Sass SCSS format using Compass mixins (needs latest beta of Compass) » Copy to clipboard button for quickly grabbing the generated code » Easy resizing of preview panel by dragging its corner show more... About The Ultimate CSS Gradient Editor was created by Alex Sirota (iosart). If you like this tool, check out ColorZilla for more advanced tools such as eyedroppers, color pickers, palette editors and website analyzers. As you might know, HTML5 introduced many exciting features for Web developers. One of the features is the ability to specify gradients using pure CSS3, without having to create any images and use them as repeating backgrounds for gradient effects. Important: You'll need a recent version of Firefox, Chrome, Safari, Opera or IE to use this Gradient Generator. The resulting CSS gradients are cross-browser - they will work in these browsers and will also fall back to a simpler gradient in older versions of Internet Explorer.
- Features Powerful Photoshop-like interface Cross browser CSS output Horizontal, vertical, diagonal and radial gradients Complex multi-stop gradients Opacity support with multiple opacity stops Hex, rgb, rgba, hsl, hsla color formats Support for full multi-stop gradients with IE9 Import from image (convert image gradient to CSS) Import from existing CSS Adjust gradient by hue, saturation, lightness More than 135 gradient presets Saving custom gradient presets Sass output Flexible preview panel Gradient permalinks for sending and sharing More soon! Help The main gradient control allows you to: » Adjust the gradient stop position by dragging the stop marker » Adjust the stop color by double clicking on the stop marker » Delete a stop by draggin the stop marker up or down » Add a new stop by clicking anywhere in between the existing stop markers You can use the 'Stops' panel to conrol the color and the position of the currently selected stop more precisely. The 'Preview' panel allows previewing the current gradient as a vertical or horizontal one, and also allows quickly previewing how the Internet Explorer fallback gradient will look in IE. Finally, the 'CSS' panel always has the CSS for the current gradient for easy copying and pasting into your stylesheet. You can also use this panel to import an existing gradient CSS into the tool. Credits The 'Ultimate Web 2.0 Gradients' preset gradients were derived from work by deziner folio and SGlider12. The Color Picker is a minor adaptation of John Dyer's Color Picker.
- The Base-64 encoder function is from webtoolkit. Some icons by Yusuke Kamiyamane. Tags: CSS Gradient Editor, CSS Gradient Generator, HTML5 Gradient Generator, CSS3 Gradient Generator, CSS Gradient Maker, CSS Gradient Creator, Linear Gradients, Radial Gradients, IE6, IE7, IE8, IE9, IE10, SVG Gradients, ColorZilla Copyright © 2019 iosart labs llc, All Rights Reserved contact | terms of use | privacy policy color: hotpink;
+    background-color: teal;
+    color: hotpink;
 }
 
 #filter_form label i {
@@ -179,7 +183,7 @@ nav {
     border-radius: 50%;
     margin-right: 1rem;
     color: #0065FC;
-    background-color: DEEBFF;
+    background-color: #DEEBFF;
 }
 
 #info i {
@@ -195,9 +199,99 @@ nav {
 }
 
 
-/*
+/* zone flex : contient hébergement et + populaires */
+
 #flex {
     display: flex;
 }
 
-*/
+#popular_places article,
+#homing_places article,
+#activity_places article {
+    width: 20.1rem;
+    border-radius: 15px;
+    border: 6px solid white;
+    margin-bottom: 2px;
+}
+
+
+/* popular area */
+
+aside {
+    padding-bottom: 30px;
+    overflow-wrap: break-word;
+}
+
+#popular_places article {
+    height: 134px;
+}
+
+#popular_title .h1 {
+    margin-right: 0;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#popular_places article {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#popular_places article {
+    margin-left: 1rem;
+}
+
+.popular_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.popular_details p {
+    height: 20px;
+    font-size: .8rem;
+}
+
+.popular_details p i {
+    font-size: .7rem;
+    font-weight: 900;
+}
+
+
+/* homing area */
+
+#homing_area {
+    padding-top: 20px;
+}
+
+#homing_title .h1 {
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homing_details {
+    background-color: white;
+}
+
+
+/********** footer *****************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}

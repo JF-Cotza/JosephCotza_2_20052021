@@ -71,7 +71,6 @@
         font-size: 1.1rem;
         background-color: blue;
         border: none;
-        opacity: .7;
         padding-top: 14.49px;
         padding-bottom: 15.21px;
         padding-right: 1.2rem;
@@ -93,5 +92,39 @@
     }
     #info i {
         margin-left: .3rem;
+    }
+    /**** flex ****/
+    #flex {
+        margin-top: 33px;
+    }
+    /* zone flex placement de popular par rapport à homing*/
+    #popular_area {
+        margin-top: 20px;
+        flex: 1;
+        order: 2;
+        /*permet de placer la popularaera aprés la zone homing */
+    }
+    #homing_area {
+        margin-top: 20px;
+        flex: 2;
+        order: 1
+    }
+    /*************** footer ************/
+    /* footer media queries +768*/
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer ul {
+        flex: 1;
+        /* les 3 éléments ont la même taille*/
+        text-align: left;
+        margin: 20px 0 0 0;
+    }
+    footer li {
+        padding-left: .6rem;
     }
 }
