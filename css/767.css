@@ -12,8 +12,13 @@
     header {
         margin-bottom: 32px;
     }
-    header a {
+    #logo {
         height: 65px;
+    }
+    header li {
+        height: 65px;
+        box-sizing: border-box;
+        display: inline-block;
     }
     /* placement du logo au même niveau que les autres lien */
     #logo {
@@ -26,13 +31,21 @@
         top: 25px;
         left: -25px;
     }
+    #logo,
+    nav li:nth-child(1),
+    nav li:nth-child(2) {
+        text-align: center;
+    }
     /* la nav */
     nav {
         height: 132px;
     }
     #homing_link,
     #activity_link {
+        padding-top: 30px;
+        padding-bottom: 14px;
         border-bottom: 3px solid #0065FC;
+        box-sizing: border-box;
     }
     #homing_link:hover,
     #activity_link:hover {

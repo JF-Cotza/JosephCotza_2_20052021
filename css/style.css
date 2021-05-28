@@ -61,8 +61,6 @@ li {
 
 .grey {
     background-color: #F2F2F2;
-    /*test */
-    /* opacity: 50%;*/
 }
 
 
@@ -78,27 +76,31 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    text-align: center;
 }
 
 #right_links {
     /*le bloc des liens hebergements/activités/s'inscrire */
-    width: 150%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     /*pour mettre s'inscrire au dessus*/
     justify-content: flex-end;
     /*pour mettre s'inscrire à droite*/
+    padding-left: 0;
+    /*sinon le texte des liens est décalé vers la gauche à cause des modéles de boîtes*/
+    margin: 0;
 }
 
 #right_links li {
     width: 50%;
-    height: auto;
     font-family: 'ralewaybold';
-    display: inline-block;
     color: #0065FC;
-    padding-bottom: 15px;
-    padding-top: 19px;
+}
+
+#right_links li a {
+    display: inline-block;
+    /* sinon le lien ne peut pas s'étirer sur tout la largeur du li */
+    width: 100%;
 }
 
 #right_links li:hover {
@@ -108,7 +110,9 @@ nav {
 #connect_link {
     text-align: right;
     align-self: self-end;
-    margin-right: 1.3rem;
+    padding-top: 38px;
+    padding-bottom: 8.6px;
+    width: 100%;
 }
 
 
@@ -175,6 +179,14 @@ nav {
     color: hotpink;
 }
 
+.filter:hover+label
+/*il faut mettre le +label pour que l'effet s'applique*/
+
+{
+    background-color: yellow;
+    color: teal;
+}
+
 #filter_form label i {
     text-align: center;
     width: 44px;
@@ -212,6 +224,8 @@ nav {
     border-radius: 15px;
     border: 6px solid white;
     margin-bottom: 2px;
+    box-shadow: 4px 4px 5px black;
+    /*l'ombre autour des articles */
 }
 
 
