@@ -18,10 +18,6 @@
 
 /************ Générique *********************/
 
-.test {
-    background-color: rgba(255, 0, 0, .3);
-}
-
 body {
     background-color: white;
     font-family: 'ralewayregular';
@@ -91,9 +87,6 @@ nav {
     /*pour mettre s'inscrire au dessus*/
     justify-content: flex-end;
     /*pour mettre s'inscrire à droite*/
-    padding-left: 0;
-    /*sinon le texte des liens est décalé vers la gauche à cause des modéles de boîtes*/
-    margin: 0;
 }
 
 #right_links li {
@@ -117,6 +110,10 @@ nav {
 
 /**** main ****/
 
+main {
+    position: relative;
+}
+
 
 /* search area */
 
@@ -136,10 +133,13 @@ nav {
     border-right: 0;
     font-family: 'ralewaybold';
     text-indent: 1rem;
+    padding: 13.4px 0 12.6px 0;
 }
 
 #search_button {
     color: #DEEBFF;
+    padding: 13.4px 0;
+    background-color: #0065FC;
 }
 
 
@@ -163,6 +163,9 @@ nav {
     border-radius: 25px;
     margin: 4px 0;
     color: black;
+    position: relative;
+    box-sizing: border-box;
+    height: 50px;
 }
 
 .filter+label {
@@ -186,15 +189,14 @@ nav {
     color: teal;
 }
 
-#filter_form label i {
+#filter_form label span {
     text-align: center;
-    width: 44px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 50px;
     border-radius: 50%;
-    margin-right: 1rem;
     color: #0065FC;
     background-color: #DEEBFF;
+    position: absolute;
+    z-index: 2;
 }
 
 #info i {

@@ -32,7 +32,7 @@
     #right_links {
         width: 445px;
         display: flex;
-        -ms-flex-direction: row;
+        flex-direction: row;
         flex-wrap: nowrap;
     }
     #right_links a {
@@ -41,7 +41,7 @@
     }
     #right_links span {
         position: absolute;
-        top: 45px;
+        top: 63px;
     }
     #right_links li {
         flex: 1;
@@ -68,6 +68,12 @@
     main {
         margin-left: 3.4rem;
         margin-right: 1rem;
+    }
+    main div h1 {
+        margin: 15px 0 0 0;
+    }
+    main div p {
+        margin-top: 10px;
     }
     /* search area */
     #search_area {

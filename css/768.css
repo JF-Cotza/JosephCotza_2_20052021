@@ -5,6 +5,21 @@
          pour test 
         background-image: url('../Maquettes/Desktop\ -\ 1.png');
     }*/
+    /**** header ****/
+    header {
+        position: relative;
+        /*necessaire pour le z-index: */
+        z-index: 2;
+    }
+    nav {
+        position: fixed;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav div {
+        display: inline-block;
+    }
     nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
         background: #f85032;
@@ -31,16 +46,6 @@
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d', GradientType=0);
         /* IE6-9 */
     }
-    /**** header ****/
-    nav {
-        position: fixed;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-    }
-    nav div {
-        display: inline-block;
-    }
     /*positionnement logo */
     #logo {
         display: flex;
@@ -54,6 +59,8 @@
         flex: 3;
         display: flex;
         flex-wrap: nowrap;
+        padding: 0;
+        margin: 0;
     }
     #right_links a {
         position: relative;
@@ -78,8 +85,10 @@
     }
     /**** main ****/
     main {
-        margin-left: 3.4rem;
-        margin-right: 1rem;
+        margin: 100px 3.4rem 0 3.4rem;
+        /*top right bottom left*/
+        /*margin-left: 3.4rem;
+        margin-right: 1rem;*/
     }
     /* search area */
     #search_area {
