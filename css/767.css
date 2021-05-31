@@ -1,247 +1,289 @@
-/************* média queries ***********/
-
-
-/* petits écrans */
-
-@media screen and (max-width: 767px) {
-    body {
-        /*pour test */
-        background-image: url('../Maquettes/iPhone\ 8\ -\ 1.png');
-    }
-    /**** header ****/
-    header {
-        margin-bottom: 32px;
-    }
-    #logo {
-        height: 65px;
-    }
-    header li {
-        height: 65px;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-    /* placement du logo au même niveau que les autres lien */
-    #logo {
-        position: absolute;
-        top: 0px;
-        width: 50%;
-    }
-    #logo img {
-        position: relative;
-        top: 25px;
-        left: -25px;
-    }
-    #logo,
-    nav li:nth-child(1),
-    nav li:nth-child(2) {
-        text-align: center;
-    }
-    /* la nav */
-    nav {
-        height: 132px;
-    }
-    #homing_link,
-    #activity_link {
-        padding-top: 30px;
-        padding-bottom: 14px;
-        border-bottom: 3px solid #0065FC;
-        box-sizing: border-box;
-    }
-    #homing_link:hover,
-    #activity_link:hover {
-        border-bottom: 3px solid #DEEBFF;
-    }
-    /**** main ****/
-    #head_main {
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
-    }
-    main h1 {
-        box-sizing: content-box;
-        margin: collapse;
-    }
-    main p {
-        box-sizing: content-box;
-    }
-    /* search area */
-    #search_area {
-        margin-top: 35px;
-        display: flex;
-        /* pour supprimer les 'marges générés par le positionnement*/
-    }
-    #search_area input {
-        padding: 13px 0px 13px 0;
-        width: 17rem;
-        z-index: 1;
-        flex-shrink: 0.3;
-        /* si on ne met pas le shrink, l'input rétrécit et le boutton ne le recouvre pas */
-        position: relative;
-    }
-    #search_button {
-        z-index: 2;
-        position: relative;
-        top: 0;
-        left: -1.9rem;
-        /*pour pouvoir positionner le bouton, il faut :
+    /************* média queries ***********/
+    /* petits écrans */
+    
+    @media screen and (max-width: 767px) {
+        /* pour test */
+        /* body {
+            background-image: url('../Maquettes/iPhone\ 8\ -\ 1.png');
+        }*/
+        /**** header ****/
+        header {
+            margin-bottom: 32px;
+        }
+        #logo {
+            height: 65px;
+        }
+        header li {
+            height: 65px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        /* placement du logo au même niveau que les autres lien */
+        #logo {
+            position: absolute;
+            top: 0px;
+            width: 50%;
+        }
+        #logo img {
+            position: relative;
+            top: 25px;
+            left: -25px;
+        }
+        #logo,
+        nav li:nth-child(1),
+        nav li:nth-child(2) {
+            text-align: center;
+        }
+        /* la nav */
+        nav {
+            height: 135px;
+        }
+        nav ul li a {
+            position: relative;
+            display: inline-block;
+        }
+        nav ul li a:nth-child(1) {
+            text-align: center;
+        }
+        nav ul li a span {
+            display: inline-block;
+            position: absolute;
+            bottom: 8px;
+        }
+        #homing_link,
+        #activity_link {
+            box-sizing: border-box;
+            height: 65px;
+        }
+        #homing_link,
+        #activity_link {
+            border-bottom: 3px solid #0065FC;
+        }
+        #homing_link:visited,
+        #activity_link:visited {
+            border-bottom: 3px solid #DEEBFF;
+        }
+        #right_links li:nth-child(3) {
+            box-sizing: border-box;
+        }
+        #connect_link {
+            height: 64px;
+            text-align: right;
+        }
+        #connect_link span {
+            position: absolute;
+            right: 1.3rem;
+            bottom: 8px;
+        }
+        /**** main ****/
+        #head_main {
+            margin-left: 1.2rem;
+            margin-right: 1.2rem;
+        }
+        main h1 {
+            box-sizing: content-box;
+            margin: collapse;
+        }
+        main p {
+            box-sizing: content-box;
+        }
+        /* search area */
+        #search_area {
+            margin-top: 35px;
+            display: flex;
+            /* pour supprimer les 'marges générés par le positionnement*/
+        }
+        #search_area input {
+            padding: 13px 0px 13px 0;
+            width: 17rem;
+            z-index: 1;
+            flex-shrink: 0.3;
+            /* si on ne met pas le shrink, l'input rétrécit et le boutton ne le recouvre pas */
+            position: relative;
+        }
+        #search_button {
+            z-index: 2;
+            position: relative;
+            top: 0;
+            left: -1.9rem;
+            /*pour pouvoir positionner le bouton, il faut :
                 - z-index supérieur à celui qu'il recouvre
                 - une position
                 */
-        border: none;
-        border-radius: 15px;
-        background-color: #0065FC;
-        padding: 15.8px 1.1rem;
+            border: none;
+            border-radius: 15px;
+            background-color: #0065FC;
+            padding: 15.8px 1.1rem;
+        }
+        #search_button .large {
+            display: none;
+        }
+        /*filter area*/
+        #filter_area h2 {
+            margin-top: 35px;
+        }
+        #info {
+            margin-top: 30px;
+        }
+        /**** zone flex contient + populaires et hébergements ****/
+        #flex {
+            flex-direction: column;
+            margin-top: 33px;
+        }
+        /* popular area */
+        #popular_area {
+            margin-top: 20px;
+        }
+        #popular_title {
+            margin-right: 1.2rem;
+            margin-left: 1.2rem;
+        }
+        .popular_details {
+            width: 60%;
+        }
+        #popular_places a {
+            display: inline-block;
+            margin-left: 5px;
+            margin-top: 7px;
+            margin-bottom: 1px;
+        }
+        #popular_places a article {
+            background-size: 75% 100%;
+        }
+        #popular_places a:nth-child(1) article {
+            background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+        }
+        #popular_places a:nth-child(2) article {
+            background-image: url('../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+        }
+        #popular_places a:nth-child(3) article {
+            background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+        }
+        /* homing place */
+        #homing_title,
+        #homing_places {
+            margin-left: 1.3rem;
+            width: fit-content;
+        }
+        #homing_places a {
+            display: inline-block;
+            /*sinon ne prend pas en compte le margin-bottom*/
+            margin-bottom: 10px;
+        }
+        #homing_places a article {
+            background-size: cover;
+            background-position-y: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .homing_details {
+            margin-top: 110px;
+            text-indent: 10px;
+        }
+        .homing_details h3 {
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .homing_details p {
+            margin: 4px 0 0 0;
+        }
+        .homing_details .star {
+            font-size: .7rem;
+            color: #F2F2F2;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            text-indent: 0;
+            /*supression du indent sinon s'applique sur chaque étoile séparément */
+            margin-left: 10px;
+        }
+        .homing_details .star i {
+            margin-right: 1px;
+        }
+        #homing_places a:nth-child(1) article {
+            background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+        }
+        #homing_places a:nth-child(2) article {
+            background-image: url('../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+        }
+        #homing_places a:nth-child(3) article {
+            background-image: url('../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+        }
+        #homing_places a:nth-child(4) article {
+            background-image: url('../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+        }
+        #homing_places a:nth-child(5) article {
+            background-image: url('../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+        }
+        #homing_places a:nth-child(6) article {
+            background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+        }
+        #more {
+            margin-top: 34px;
+            font-family: 'ralewaybold';
+            font-size: 1.1rem;
+        }
+        #more:hover {
+            color: green;
+        }
+        /************************** activty area ***********/
+        #activity_area .h1,
+        #activity_places {
+            margin-left: 1.3rem;
+            margin-right: 1rem;
+            width: auto;
+        }
+        #activity_places a {
+            display: inline-block;
+            /*nécessaire pour la prise en compte des marges*/
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #activity_area .h1 {
+            margin-top: 37px;
+        }
+        #activity_places a article {
+            background-size: cover;
+            background-position-y: center;
+        }
+        #activity_places a:nth-child(1) article {
+            background-image: url('../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+        }
+        #activity_places a:nth-child(2) article {
+            background-image: url('../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+        }
+        #activity_places a:nth-child(3) article {
+            background-image: url('../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+        }
+        #activity_places a:nth-child(4) article {
+            background-image: url('../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+        }
+        #activity_places a:nth-child(5) article {
+            background-image: url('../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+        }
+        #activity_places a:nth-child(6) article {
+            background-image: url('../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+        }
+        .activity_details h3 {
+            padding-top: 20px;
+            padding-bottom: 15px;
+            text-indent: .9rem;
+            flex-shrink: 1;
+            background-color: white;
+            margin: 0;
+        }
+        /************** footer media queries -767************/
+        footer {
+            padding-top: 20px;
+        }
+        footer ul {
+            display: inline-block;
+            width: auto;
+            list-style-position: inside;
+            padding-left: 1rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: .7rem;
+            margin-right: .7rem;
+        }
     }
-    #search_button .large {
-        display: none;
-    }
-    /*filter area*/
-    #filter_area h2 {
-        margin-top: 35px;
-    }
-    #info {
-        margin-top: 30px;
-    }
-    /**** zone flex contient + populaires et hébergements ****/
-    #flex {
-        flex-direction: column;
-        margin-top: 33px;
-    }
-    /* popular area */
-    #popular_area {
-        margin-top: 20px;
-    }
-    #popular_title {
-        margin-right: 1.2rem;
-        margin-left: 1.2rem;
-    }
-    .popular_details {
-        width: 60%;
-    }
-    #popular_places a {
-        display: inline-block;
-        margin-left: 5px;
-        margin-top: 7px;
-        margin-bottom: 1px;
-    }
-    #popular_places a article {
-        background-size: contain;
-    }
-    #popular_places a:nth-child(1) article {
-        background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-    }
-    #popular_places a:nth-child(2) article {
-        background-image: url('../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
-    }
-    #popular_places a:nth-child(3) article {
-        background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
-    }
-    /* homing place */
-    #homing_title,
-    #homing_places {
-        margin-left: 1.3rem;
-        width: fit-content;
-    }
-    #homing_places a {
-        display: inline-block;
-        /*sinon ne prend pas en compte le margin-bottom*/
-        margin-bottom: 10px;
-    }
-    #homing_places a article {
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .homing_details {
-        margin-top: 110px;
-        text-indent: 10px;
-    }
-    .homing_details h3 {
-        margin-top: 10px;
-        margin-bottom: 0px;
-    }
-    .homing_details p {
-        margin: 4px 0 0 0;
-    }
-    .homing_details .star {
-        font-size: .7rem;
-        color: #F2F2F2;
-        margin-top: 6px;
-        margin-bottom: 6px;
-        text-indent: 0;
-        /*supression du indent sinon s'applique sur chaque étoile séparément */
-        margin-left: 10px;
-    }
-    .homing_details .star i {
-        margin-right: 1px;
-    }
-    #homing_places a:nth-child(1) article {
-        background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-    }
-    #homing_places a:nth-child(2) article {
-        background-image: url('../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-    }
-    #homing_places a:nth-child(3) article {
-        background-image: url('../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-    }
-    #homing_places a:nth-child(4) article {
-        background-image: url('../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-    }
-    #homing_places a:nth-child(5) article {
-        background-image: url('../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-    }
-    #homing_places a:nth-child(6) article {
-        background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-    }
-    #more {
-        margin-top: 34px;
-        font-family: 'ralewaybold';
-        font-size: 1.1rem;
-    }
-    #more:hover {
-        color: green;
-    }
-    /************************** activty area ***********/
-    #activity_area .h1,
-    #activity_places {
-        margin-left: 1.3rem;
-        margin-right: 1rem;
-        width: auto;
-    }
-    #activity_area .h1 {
-        margin-top: 37px;
-    }
-    #activity_places a:nth-child(1) article {
-        background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    }
-    #activity_places a:nth-child(2) article {
-        background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-    }
-    #activity_places a:nth-child(3) article {
-        background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-    }
-    #activity_places a:nth-child(4) article {
-        background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-    }
-    #activity_places a:nth-child(5) article {
-        background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-    }
-    #activity_places a:nth-child(6) article {
-        background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-    }
-    /************** footer media queries -767************/
-    footer {
-        margin-left: .7rem;
-        margin-right: .7rem;
-        padding-top: 20px;
-    }
-    footer ul {
-        display: inline-block;
-        width: auto;
-        list-style-position: inside;
-        padding-left: 1rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: 0;
-    }
-}

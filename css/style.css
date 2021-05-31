@@ -45,6 +45,11 @@ h2 {
 
 h3 {
     font-size: .95rem;
+    color: black;
+}
+
+p {
+    color: black
 }
 
 a {
@@ -94,25 +99,19 @@ nav {
 #right_links li {
     width: 50%;
     font-family: 'ralewaybold';
+}
+
+#right_links a {
+    display: flex;
+    justify-content: center;
+}
+
+#right_links a {
     color: #0065FC;
 }
 
-#right_links li a {
-    display: inline-block;
-    /* sinon le lien ne peut pas s'étirer sur tout la largeur du li */
-    width: 100%;
-}
-
-#right_links li:hover {
+#right_links a:visited {
     color: black;
-}
-
-#connect_link {
-    text-align: right;
-    align-self: self-end;
-    padding-top: 38px;
-    padding-bottom: 8.6px;
-    width: 100%;
 }
 
 
@@ -293,7 +292,12 @@ aside {
 
 /* activity area */
 
-#activity area .h1 {}
+#activity_places article {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: flex-end;
+}
 
 
 /********** footer *****************/
