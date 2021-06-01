@@ -1,0 +1,135 @@
+            /* pour test */
+            
+            body {
+                opacity: .5;
+            }
+            
+            li {
+                list-style-type: none;
+                background-color: green;
+                font-family: 'ralewaybold';
+                margin: 2px 5px;
+            }
+            
+            #filter_form {
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            
+            #filter_form label {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+                background-color: white;
+                color: black;
+            }
+            
+            #filter_form i {
+                position: absolute;
+                left: -2px;
+            }
+            
+            #filter_form span {
+                margin-left: 3.7rem;
+            }
+            /* filter area */
+            
+            .filter {
+                display: none;
+            }
+            
+            .filter+label,
+            .filter:checked+.label {
+                font-family: 'ralewaybold';
+                display: inline-block;
+                padding-right: 1rem;
+                border-radius: 25px;
+                margin: 4px 0;
+                color: black;
+                position: relative;
+                box-sizing: border-box;
+                height: 50px;
+            }
+            
+            .filter+label {
+                border-top: 3px solid #F2F2F2;
+                border-bottom: 3px solid #F2F2F2;
+                border-right: 3px solid #F2F2F2;
+                border-left: 3px solid #DEEBFF;
+                background-color: white;
+            }
+            
+            .filter:checked+label {
+                background-color: teal;
+                color: hotpink;
+            }
+            
+            .filter:hover+label
+            /*il faut mettre le +label pour que l'effet s'applique*/
+            
+            {
+                background-color: yellow;
+                color: teal;
+            }
+            
+            #filter_form i {
+                width: 50px;
+                background-color: red;
+                padding: 17px 0;
+                border-radius: 25px;
+                text-align: center;
+            }
+            
+            #filter_form span {
+                text-align: center;
+                border-radius: 50%;
+            }
+            
+            #info i {
+                color: #0065FC;
+                font-size: .7rem;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 50%;
+                width: 23px;
+                text-align: center;
+                border: 1px solid #F2F2F2;
+                margin-right: .5rem;
+            }
+            
+            @media screen and (max-width: 767px) {
+                /*        body {
+            background-image: url('Maquettes/Filter-iPhone\ 8\ -\ 1.png');
+        }
+        #filter_form {
+            margin: 44px 1rem 0 1rem;
+        }*/
+            }
+            
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                /*            #filter_form label {
+                margin: 0 .5rem;
+            }
+            #info i {
+                margin-left: .3rem;
+            }*/
+            }
+            
+            @media screen and (min-width: 992px) {
+                /*              body {
+                    background-image: url("Maquettes/filter-Desktop\ -\ 1.png");
+                }
+                #filter_form {
+                    margin-left: 8.5rem;
+                }
+                #filter_form label {
+                    font-size: 1.1rem;
+                    margin: 0 .4rem;
+                }
+                #filter_form span {
+                    margin-right: .5rem;
+                }*/
+            }

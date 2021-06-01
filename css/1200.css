@@ -89,7 +89,8 @@
     #search_button {
         font-family: 'ralewaybold';
         font-size: 1.1rem;
-        background-color: blue;
+        background-color: #0065FC;
+        ;
         border: none;
         padding-top: 14.49px;
         padding-bottom: 15.21px;
@@ -107,8 +108,18 @@
         margin-left: .2rem;
         margin-right: 1rem;
     }
+    #filter_form {
+        margin-left: 1rem;
+    }
     #filter_form label {
-        margin: 0 .5rem;
+        font-size: 1.1rem;
+        margin: 0 .4rem;
+    }
+    #filter_form li {
+        margin-right: 1.5rem;
+    }
+    #filter_form span {
+        margin-right: .5rem;
     }
     #info i {
         margin-left: .3rem;
