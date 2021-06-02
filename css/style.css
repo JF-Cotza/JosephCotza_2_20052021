@@ -29,6 +29,9 @@ h3 {
     font-family: 'ralewaybold';
 }
 
+
+/* la classe h1 est introduite suite au rejet du validateur de W3C de plusieurs h1 sur la page */
+
 h1,
 .h1 {
     font-size: 1.33rem;
@@ -90,7 +93,8 @@ nav {
 }
 
 #right_links li {
-    width: 50%;
+    width: 49.9%;
+    /*pour éliminer le débordement */
     font-family: 'ralewaybold';
 }
 
@@ -228,6 +232,7 @@ main {
     text-align: center;
     border: 1px solid #F2F2F2;
     margin-right: .5rem;
+    float: left;
 }
 
 
@@ -235,17 +240,11 @@ main {
 
 #flex {
     display: flex;
+    opacity: .5;
 }
 
-#popular_places article,
-#homing_places article,
-#activity_places article {
-    width: 20.1rem;
-    border-radius: 15px;
-    border: 6px solid white;
-    margin-bottom: 2px;
-    box-shadow: 4px 4px 5px black;
-    /*l'ombre autour des articles */
+.star {
+    color: #F2F2F2;
 }
 
 
@@ -256,13 +255,29 @@ aside {
     overflow-wrap: break-word;
 }
 
+#popular_places {
+    display: flex;
+}
+
+#popular_places article,
+#homing_places article,
+#activity_places article {
+    border-radius: 15px;
+    border: 6px solid white;
+    margin-bottom: 2px;
+    box-shadow: 4px 4px 5px black;
+    /*l'ombre autour des articles */
+    /*width:20.1rem*/
+}
+
 #popular_places article {
     height: 134px;
 }
 
 #popular_title .h1 {
-    margin-right: 0;
+    margin-right: 1.1rem;
     margin-bottom: 18px;
+    margin-left: 1.1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -270,10 +285,6 @@ aside {
 #popular_places article {
     display: flex;
     justify-content: flex-end;
-}
-
-#popular_places article {
-    margin-left: 1rem;
 }
 
 .popular_details {
@@ -298,6 +309,7 @@ aside {
 
 #homing_area {
     padding-top: 20px;
+    margin: 0;
 }
 
 #homing_title .h1 {
@@ -306,12 +318,20 @@ aside {
     justify-content: space-between;
 }
 
+#homing_places {
+    display: flex;
+}
+
 .homing_details {
     background-color: white;
 }
 
 
 /* activity area */
+
+#activity_places {
+    display: flex;
+}
 
 #activity_places article {
     display: flex;

@@ -135,6 +135,9 @@
         order: 2;
         /*permet de placer la popularaera aprés la zone homing */
     }
+    #popular_places {
+        flex-direction: column;
+    }
     #homing_area {
         margin-top: 20px;
         flex: 2;
