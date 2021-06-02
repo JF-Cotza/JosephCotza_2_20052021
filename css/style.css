@@ -240,11 +240,10 @@ main {
 
 #flex {
     display: flex;
-    opacity: .5;
 }
 
 .star {
-    color: #F2F2F2;
+    color: grey;
 }
 
 
@@ -322,7 +321,8 @@ aside {
     display: flex;
 }
 
-.homing_details {
+.homing_details,
+.activity_details {
     background-color: white;
 }
 

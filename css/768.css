@@ -207,6 +207,74 @@
         margin-top: 20px;
         order: 2;
     }
+    #homing_places,
+    #activity_places {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    #homing_places li,
+    #activity_places li {
+        width: 45%;
+    }
+    #homing_places article {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-size: contain;
+        background-position-y: -10px;
+    }
+    #homing_places li:nth-child(1) article {
+        background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    }
+    #homing_places li:nth-child(2) article {
+        background-image: url('../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    }
+    #homing_places li:nth-child(3) article {
+        background-image: url('../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+    }
+    #homing_places li:nth-child(4) article {
+        background-image: url('../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+    }
+    #homing_places li:nth-child(5) article {
+        background-image: url('../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+    }
+    #homing_places li:nth-child(6) article {
+        background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    }
+    #activity_places article {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-size: cover;
+        background-position-y: -10px;
+    }
+    .activity_details {
+        margin: 0;
+        height: 30px;
+    }
+    /* images de fond activités */
+    #activity_places li:nth-child(1) article {
+        background-image: url('../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    }
+    #activity_places li:nth-child(2) article {
+        background-image: url('../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    }
+    #activity_places li:nth-child(3) article {
+        background-image: url('../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    }
+    #activity_places li:nth-child(4) article {
+        background-image: url('../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    }
+    #activity_places li:nth-child(5) article {
+        background-image: url('../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    }
+    #activity_places li:nth-child(6) article {
+        background-image: url('../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    }
     /*************** footer ************/
     /* footer media queries +768*/
     footer {
