@@ -1,361 +1,344 @@
-/* ajout de la police Raleway */
-
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('../font/raleway-regular.ttf');
-}
-
-@font-face {
-    font-family: 'ralewaybold';
-    src: url('../font/Raleway-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'ralewayblack';
-    src: url('../font/Raleway-Black.ttf');
-}
-
-
-/************ Générique *********************/
-
-body {
-    background-color: white;
-    font-family: 'ralewayregular';
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'ralewaybold';
-}
-
-
-/* la classe h1 est introduite suite au rejet du validateur de W3C de plusieurs h1 sur la page */
-
-h1,
-.h1 {
-    font-size: 1.33rem;
-    margin-right: 0.7rem;
-}
-
-h2 {
-    font-size: 1.1rem;
-}
-
-h3 {
-    font-size: .95rem;
-    color: black;
-}
-
-p {
-    color: black
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style-type: none;
-}
-
-.blue {
-    color: #0065FC;
-}
-
-.grey {
-    background-color: #F2F2F2;
-}
-
-
-/**** header ****/
-
-header {
-    width: 100%;
-    overflow: auto;
-}
-
-nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-#right_links {
-    /*le bloc des liens hebergements/activités/s'inscrire */
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    /*pour mettre s'inscrire au dessus*/
-    justify-content: flex-end;
-    /*pour mettre s'inscrire à droite*/
-}
-
-#right_links li {
-    width: 49.9%;
-    /*pour éliminer le débordement */
-    font-family: 'ralewaybold';
-}
-
-#right_links a {
-    display: flex;
-    justify-content: center;
-}
-
-#right_links a {
-    color: #0065FC;
-}
-
-#right_links a:visited {
-    color: black;
-}
-
-
-/**** main ****/
-
-main {
-    position: relative;
-}
-
-
-/* search area */
-
-#search_area span {
-    /*total padding 34 */
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    border-radius: 15px 0 0 15px;
-}
-
-#search_area input {
-    border-top: 3px solid #F2F2F2;
-    border-bottom: 3px solid #F2F2F2;
-    border-left: 0;
-    border-right: 0;
-    font-family: 'ralewaybold';
-    text-indent: 1rem;
-    padding: 13.4px 0 12.6px 0;
-}
-
-#search_button {
-    color: #DEEBFF;
-    padding: 13.4px 0;
-    background-color: #0065FC;
-}
-
-
-/* filter area */
-
-#filter_area {
-    margin-top: 10px;
-    margin-left: .2rem;
-    margin-right: .2rem;
-}
-
-.filter {
-    display: none;
-}
-
-#filter_form {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-#filter_form li {
-    list-style-type: none;
-    font-family: 'ralewaybold';
-}
-
-#filter_form label {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    background-color: white;
-    color: black;
-}
-
-#filter_form i {
-    position: absolute;
-    left: -2px;
-    width: 50px;
-    padding: 17px 0;
-    border-radius: 25px;
-    text-align: center;
-    background-color: #DEEBFF;
-}
-
-#filter_form span {
-    margin-left: 3.7rem;
-    text-align: center;
-    border-radius: 50%;
-}
-
-#filter_form input+label,
-#filter_form input:checked+.label {
-    font-family: 'ralewaybold';
-    /*display: inline-block;*/
-    padding-right: 1rem;
-    border-radius: 25px;
-    margin: 4px 0;
-    color: black;
-    position: relative;
-    box-sizing: border-box;
-    height: 50px;
-}
-
-#filter_form input+label {
-    border-top: 3px solid #F2F2F2;
-    border-bottom: 3px solid #F2F2F2;
-    border-right: 3px solid #F2F2F2;
-    border-left: 3px solid #DEEBFF;
-    background-color: white;
-}
-
-#filter_form input:checked+label {
-    background-color: teal;
-    color: hotpink;
-}
-
-#info i {
-    color: #0065FC;
-    font-size: .7rem;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 50%;
-    width: 23px;
-    text-align: center;
-    border: 1px solid #F2F2F2;
-    margin-right: .5rem;
-    float: left;
-}
-
-
-/* zone flex : contient hébergement et + populaires */
-
-#flex {
-    display: flex;
-}
-
-.star {
-    color: grey;
-}
-
-
-/* popular area */
-
-aside {
-    padding-bottom: 30px;
-    overflow-wrap: break-word;
-}
-
-#popular_places {
-    display: flex;
-}
-
-#popular_places article,
-#homing_places article,
-#activity_places article {
-    border-radius: 15px;
-    border: 6px solid white;
-    margin-bottom: 2px;
-    box-shadow: 4px 4px 5px black;
-    /*l'ombre autour des articles */
-    /*width:20.1rem*/
-}
-
-#popular_places article {
-    height: 134px;
-}
-
-#popular_title .h1 {
-    margin-right: 1.1rem;
-    margin-bottom: 18px;
-    margin-left: 1.1rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-#popular_places article {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.popular_details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-}
-
-.popular_details p {
-    height: 20px;
-    font-size: .8rem;
-}
-
-.popular_details p i {
-    font-size: .7rem;
-    font-weight: 900;
-}
-
-
-/* homing area */
-
-#homing_area {
-    padding-top: 20px;
-    margin: 0;
-}
-
-#homing_title .h1 {
-    margin-right: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-#homing_places {
-    display: flex;
-}
-
-.homing_details,
-.activity_details {
-    background-color: white;
-}
-
-
-/* activity area */
-
-#activity_places {
-    display: flex;
-}
-
-#activity_places article {
-    display: flex;
-    flex-direction: column;
-    height: 180px;
-    justify-content: flex-end;
-}
-
-
-/********** footer *****************/
-
-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-footer li {
-    list-style: none;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-}
+    /* ajout de la police Raleway */
+    
+    @font-face {
+        font-family: 'ralewayregular';
+        src: url('../font/raleway-regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'ralewaybold';
+        src: url('../font/Raleway-Bold.ttf');
+    }
+    
+    @font-face {
+        font-family: 'ralewayblack';
+        src: url('../font/Raleway-Black.ttf');
+    }
+    /************ Générique *********************/
+    
+    body {
+        background-color: white;
+        font-family: 'ralewayregular';
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'ralewaybold';
+    }
+    /* la classe h1 est introduite suite au rejet du validateur de W3C de plusieurs h1 sur la page */
+    
+    h1,
+    .h1 {
+        font-size: 1.33rem;
+        margin-right: 0.7rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    h3 {
+        font-size: .95rem;
+        color: black;
+    }
+    
+    p {
+        color: black
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .blue {
+        color: #0065FC;
+    }
+    
+    .grey {
+        background-color: #F2F2F2;
+    }
+    /**** header ****/
+    
+    header {
+        width: 100%;
+        overflow: auto;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    
+    #right_links {
+        /*le bloc des liens hebergements/activités/s'inscrire */
+        width: 100%;
+        display: flex;
+    }
+    
+    #right_links li {
+        /*pour éliminer le débordement */
+        font-family: 'ralewaybold';
+    }
+    
+    #right_links a {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #right_links a {
+        color: #0065FC;
+    }
+    
+    #right_links a:visited {
+        color: black;
+    }
+    /**** main ****/
+    
+    main {
+        position: relative;
+    }
+    /* search area */
+    
+    #search_area span {
+        /*total padding 34 */
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        border-radius: 15px 0 0 15px;
+    }
+    
+    #search_area input {
+        border-top: 3px solid #F2F2F2;
+        border-bottom: 3px solid #F2F2F2;
+        border-left: 0;
+        border-right: 0;
+        font-family: 'ralewaybold';
+        text-indent: 1rem;
+        padding: 13.4px 0 12.6px 0;
+    }
+    
+    #search_button {
+        color: #DEEBFF;
+        padding: 13.4px 0;
+        background-color: #0065FC;
+    }
+    /* filter area */
+    
+    #filter_area {
+        margin-top: 10px;
+        margin-left: .2rem;
+        margin-right: .2rem;
+    }
+    
+    .filter {
+        display: none;
+    }
+    
+    #filter_form {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    #filter_form li {
+        list-style-type: none;
+        font-family: 'ralewaybold';
+    }
+    
+    #filter_form label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        background-color: white;
+        color: black;
+    }
+    
+    #filter_form input:hover+label {
+        /*il faut mettre le +label pour que l'effet s'applique*/
+        background-color: teal;
+        color: yellow;
+    }
+    
+    #filter_form i {
+        position: absolute;
+        left: -2px;
+        width: 50px;
+        padding: 17px 0;
+        border-radius: 25px;
+        text-align: center;
+        background-color: #DEEBFF;
+    }
+    
+    #filter_form span {
+        margin-left: 3.7rem;
+        text-align: center;
+        border-radius: 50%;
+    }
+    
+    #filter_form input+label,
+    #filter_form input:checked+.label {
+        font-family: 'ralewaybold';
+        /*display: inline-block;*/
+        padding-right: 1rem;
+        border-radius: 25px;
+        margin: 4px 0;
+        color: black;
+        position: relative;
+        box-sizing: border-box;
+        height: 50px;
+    }
+    
+    #filter_form input+label {
+        border-top: 3px solid #F2F2F2;
+        border-bottom: 3px solid #F2F2F2;
+        border-right: 3px solid #F2F2F2;
+        border-left: 3px solid #DEEBFF;
+        background-color: white;
+    }
+    
+    #filter_form input:checked+label {
+        background-color: teal;
+        color: hotpink;
+    }
+    
+    #info i {
+        color: #0065FC;
+        font-size: .7rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 50%;
+        width: 23px;
+        text-align: center;
+        border: 1px solid #F2F2F2;
+        margin-right: .5rem;
+        float: left;
+    }
+    /* zone flex : contient hébergement et + populaires */
+    
+    #flex {
+        display: flex;
+    }
+    
+    .star {
+        color: grey;
+    }
+    /* popular area */
+    
+    aside {
+        padding-bottom: 30px;
+        overflow-wrap: break-word;
+    }
+    
+    #popular_area {
+        border-radius: 15px;
+    }
+    
+    #popular_places {
+        display: flex;
+    }
+    
+    #popular_places article,
+    #homing_places article,
+    #activity_places article {
+        border-radius: 15px;
+        border: 6px solid white;
+        margin-bottom: 2px;
+        box-shadow: 4px 4px 5px black;
+        /*l'ombre autour des articles */
+        /*width:20.1rem*/
+    }
+    
+    #popular_places article {
+        height: 134px;
+    }
+    
+    #popular_title .h1 {
+        margin-right: 1.1rem;
+        margin-bottom: 18px;
+        margin-left: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #popular_places article {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .popular_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+    }
+    
+    .popular_details p {
+        height: 20px;
+        font-size: .8rem;
+    }
+    
+    .popular_details p i {
+        font-size: .7rem;
+        font-weight: 900;
+    }
+    /* homing area */
+    
+    #homing_area {
+        padding-top: 20px;
+        margin: 0;
+    }
+    
+    #homing_title .h1 {
+        margin-right: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #homing_places {
+        display: flex;
+    }
+    
+    .homing_details,
+    .activity_details {
+        display: flex;
+        background-color: white;
+    }
+    /* activity area */
+    
+    #activity_places {
+        display: flex;
+    }
+    
+    #activity_places article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    /********** footer *****************/
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer li {
+        list-style: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: black;
+    }

@@ -57,10 +57,12 @@
     /* nav lien : le bloc des liens hebergements/activités/s'inscrire */
     #right_links {
         flex: 3;
-        display: flex;
         flex-wrap: nowrap;
         padding: 0;
         margin: 0;
+    }
+    #right_links li {
+        flex: 1;
     }
     #right_links a {
         position: relative;
