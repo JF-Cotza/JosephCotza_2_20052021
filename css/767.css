@@ -205,7 +205,14 @@
     #popular_places li:nth-child(3) article {
         background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
     }
+    aside {
+        padding-bottom: 23px;
+    }
     /* homing place */
+    #homing_area {
+        padding-top: 39px;
+        margin: 0;
+    }
     #homing_title,
     #homing_places {
         width: 88%;
@@ -338,6 +345,7 @@
     /************** footer media queries -767************/
     footer {
         padding-top: 20px;
+        flex-direction: column;
     }
     footer ul {
         display: inline-block;

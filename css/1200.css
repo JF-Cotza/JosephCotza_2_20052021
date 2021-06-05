@@ -1,10 +1,11 @@
     /* grands écrans */
     
     @media screen and (min-width: 992px) {
-        /*    body {*/
-        /*pour test*/
-        /* background-image: url('../Maquettes/Desktop\ -\ 1.png');*/
-        /*}*/
+        body {
+            /*pour test*/
+            background-image: url('../Maquettes/Desktop\ -\ 1.png');
+            opacity: .5;
+        }
         /**** header ****/
         header {
             padding: 0;
@@ -45,7 +46,7 @@
         }
         #right_links span {
             position: absolute;
-            top: 63px;
+            top: 45px;
         }
         #right_links li {
             width: 160px;
@@ -59,6 +60,7 @@
         #homing_link,
         #activity_link {
             border-top: 3px solid #0065FC;
+            box-sizing: border-box;
         }
         #homing_link:visited,
         #activity_link:visited {
@@ -72,15 +74,15 @@
             left: 1.2rem;
         }
         /**** main ****/
-        main {
-            margin-left: 3.4rem;
-            margin-right: 1rem;
-        }
         main div h1 {
             margin: 15px 0 0 0;
         }
         main div p {
             margin-top: 10px;
+        }
+        #head_main {
+            width: 92%;
+            margin: 0 auto;
         }
         /* search area */
         #search_area {
@@ -131,11 +133,25 @@
         #info i {
             margin-left: .3rem;
         }
-        /**** flex ****/
+        /**** flex area : top block****/
         #top_block {
-            margin-top: 33px;
+            width: 93%;
+            margin: 33px auto 0 auto;
+            justify-content: space-around;
+        }
+        #top_block aside {
+            background-color: red;
+        }
+        #top_block section {
+            background-color: green;
         }
         /* zone flex placement de popular par rapport à homing*/
+        #popular_title h2 {
+            display: flex;
+            justify-content: space-between;
+            width: 82%;
+            margin: 36px auto 0 auto;
+        }
         #popular_area {
             margin-top: 20px;
             margin-left: 2.4rem;
@@ -161,6 +177,16 @@
         #popular_places li:nth-child(3) article {
             background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
         }
+        .popular_details {
+            width: 60%;
+        }
+        .popular_details h3,
+        .popular_details p {
+            margin-left: .75rem;
+            margin-right: 1rem;
+            margin-top: 8.2px;
+        }
+        /* homing area */
         #homing_area {
             margin-top: 20px;
             flex: 2.11;
@@ -168,10 +194,16 @@
             background-color: #F2F2F2;
             border-radius: 15px;
         }
+        #homing_area h2 {
+            width: 91%;
+            margin: 0 auto 0 auto;
+        }
         #homing_places {
             padding: 0;
             flex-wrap: wrap;
             justify-content: space-around;
+            width: 98%;
+            margin: 6px auto 0 auto;
         }
         #homing_places li {
             width: 27%;

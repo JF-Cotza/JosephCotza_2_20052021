@@ -6,6 +6,7 @@
         position: relative;
         /*necessaire pour le z-index: */
         z-index: 2;
+        height: 100px;
     }
     nav {
         position: fixed;
@@ -62,9 +63,9 @@
         text-indent: 25px;
     }
     /**** main ****/
-    main {
-        margin: 100px 3.4rem 0 3.4rem;
-        /*top right bottom left*/
+    #head_main {
+        width: 88%;
+        margin: 0 auto;
     }
     /* search area */
     #search_area {
@@ -133,12 +134,21 @@
     #info i {
         margin-left: .3rem;
     }
-    /**** flex ****/
+    /**** Zone flex : top_block ****/
     #top_block {
         flex-direction: column;
         margin-top: 33px;
     }
+    #popular_title,
+    #popular_places {
+        width: 88%;
+        margin: 0 auto;
+    }
     /* zone flex placement de popular par rapport à homing*/
+    #popular_title h2 {
+        display: flex;
+        justify-content: space-between;
+    }
     #popular_area {
         margin-top: 20px;
         order: 1;
@@ -181,6 +191,20 @@
     .popular_details p {
         margin: 0;
     }
+    aside {
+        padding-bottom: 23px;
+    }
+    /* homing area */
+    #homing_area {
+        padding-top: 39px;
+        margin: 0;
+    }
+    #homing_places,
+    #homing_title,
+    #more {
+        width: 88%;
+        margin: 0 auto;
+    }
     #homing_area {
         margin-top: 20px;
         order: 2;
@@ -189,12 +213,12 @@
     #activity_places {
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0;
         padding: 0;
     }
     #homing_places li,
     #activity_places li {
         width: 45%;
+        margin: 10px 0;
     }
     #homing_places article {
         height: 300px;
@@ -221,6 +245,10 @@
     }
     #homing_places li:nth-child(6) article {
         background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    }
+    /*activity area*/
+    #activity_area {
+        margin: 20px 0;
     }
     #activity_places article {
         height: 300px;
@@ -259,10 +287,10 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 35px;
-        margin-left: 20px;
-        margin-right: 20px;
     }
     footer ul {
+        width: 88%;
+        margin: 0 auto;
         flex: 1;
         /* les 3 éléments ont la même taille*/
         text-align: left;
