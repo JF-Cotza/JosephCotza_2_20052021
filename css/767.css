@@ -6,12 +6,11 @@
 @media screen and (max-width: 767px) {
     /* pour test */
     body {
-        background-image: url('../Maquettes/iPhone\ 8\ -\ 1.png');
+        background-color: white;
     }
     /**** header ****/
     header {
-        margin-bottom: 32px;
-        height: 132px;
+        margin-bottom: 15px;
     }
     header li {
         height: 65px;
@@ -19,8 +18,8 @@
         box-sizing: border-box;
         display: inline-block;
     }
-    header li:hover {
-        background-color: cadetblue;
+    header a:hover {
+        background-color: #F2F2F2;
     }
     header li:nth-child(1) {
         order: 3;
@@ -37,6 +36,7 @@
     /* placement du logo au même niveau que les autres lien */
     #logo {
         position: relative;
+        height: 100%;
     }
     #logo img {
         position: absolute;
@@ -49,15 +49,11 @@
         text-align: center;
     }
     nav {
-        height: 130px;
+        flex-wrap: wrap;
     }
     nav ul {
         padding: 0;
         margin: 0;
-    }
-    nav ul li a {
-        position: relative;
-        display: inline-block;
     }
     nav ul li a:nth-child(1) {
         text-align: center;
@@ -99,8 +95,14 @@
         bottom: 8px;
     }
     /**** main ****/
+    main {
+        width: 100%;
+        margin-top: 34px;
+        margin-bottom: 10px;
+    }
     #head_main {
-        padding: 0 1.2rem;
+        width: 88%;
+        margin: 0 auto 10px auto;
     }
     main h1 {
         box-sizing: content-box;
@@ -127,7 +129,7 @@
         z-index: 2;
         position: relative;
         top: 0;
-        left: -1.9rem;
+        left: -2.2rem;
         /*pour pouvoir positionner le bouton, il faut :
                 - z-index supérieur à celui qu'il recouvre
                 - une position
@@ -155,13 +157,19 @@
         margin-top: 30px;
     }
     /**** zone flex contient + populaires et hébergements ****/
-    #flex {
+    #top_block {
         flex-direction: column;
-        margin-top: 33px;
+        margin-top: 60px;
     }
     /* popular area */
-    #popular_area {
-        margin-top: 20px;
+    #popular_title,
+    #popular_places {
+        width: 88%;
+        margin: 0 auto;
+    }
+    #popular_title h2 {
+        display: flex;
+        justify-content: space-between;
     }
     .popular_details {
         width: 60%;
@@ -169,20 +177,24 @@
     #popular_places {
         flex-direction: column;
         align-items: center;
-        margin: 0;
         padding: 0;
+        margin-top: 20px;
     }
     #popular_places li {
         display: inline-block;
-        margin-top: 7px;
-        margin-bottom: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
     }
     #popular_places article {
-        width: 20.1rem;
         background-size: 60% 100%;
         /*horizontal - vertical*/
         background-position-x: -2rem;
         background-position-y: bottom;
+    }
+    .popular_details h3,
+    .popular_details p {
+        margin: 0 1rem;
     }
     #popular_places li:nth-child(1) article {
         background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
@@ -194,20 +206,22 @@
         background-image: url('../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
     }
     /* homing place */
-    #homing_title {
-        text-indent: .9rem;
+    #homing_title,
+    #homing_places {
+        width: 88%;
+        margin: 0 auto;
     }
     #homing_places {
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        margin-top: 19px;
         padding: 0;
     }
     #homing_places li {
         display: inline-block;
         /*sinon ne prend pas en compte le margin-bottom*/
         margin-bottom: 10px;
-        width: 88%;
+        width: 100%;
     }
     #homing_places article {
         background-size: cover;
@@ -215,6 +229,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        height: 200px;
     }
     .homing_details {
         margin-top: 110px;
@@ -229,7 +244,6 @@
     }
     .homing_details .star {
         font-size: .7rem;
-        color: #F2F2F2;
         margin-top: 6px;
         margin-bottom: 6px;
         text-indent: 0;
@@ -258,37 +272,40 @@
         background-image: url('../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
     }
     #more {
-        margin-top: 34px;
+        margin: 14px auto 0 auto;
         font-family: 'ralewaybold';
         font-size: 1.1rem;
-    }
-    #more:hover {
-        color: green;
+        width: 88%;
     }
     /************************** activty area ***********/
+    #activity_area h2,
+    #activity_places {
+        width: 88%;
+        margin: 0 auto;
+    }
     #activity_places {
         flex-direction: column;
         align-items: center;
-        margin: 0;
         padding: 0;
     }
     #activity_places li {
         display: inline-block;
-        width: 89%;
-        margin-top: 8px;
+        width: 100%;
+        margin-top: 27px;
     }
     #activity_places a {
         /*nécessaire pour la prise en compte des marges*/
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    #activity_area .h1 {
-        margin-top: 49px;
+    #activity_area .major_title {
+        margin-top: 55px;
     }
     #activity_places article {
         background-size: cover;
         background-position-y: center;
-        height: 180px;
+        height: 185px;
+        box-sizing: border-box;
     }
     #activity_places li:nth-child(1) article {
         background-image: url('../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
@@ -308,13 +325,15 @@
     #activity_places li:nth-child(6) article {
         background-image: url('../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
     }
-    .activity_details h3 {
+    .activity_details {
         padding-top: 20px;
-        padding-bottom: 15px;
         text-indent: .9rem;
         flex-shrink: 1;
         background-color: white;
         margin: 0;
+    }
+    #activity_area {
+        margin-bottom: 50px;
     }
     /************** footer media queries -767************/
     footer {
