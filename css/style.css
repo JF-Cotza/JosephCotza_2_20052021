@@ -283,11 +283,6 @@
         }
         /* homing area */
         
-        #homing_area {
-            padding-top: 39px;
-            margin: 0;
-        }
-        
         #homing_title .h1 {
             margin-right: 0;
             display: flex;
