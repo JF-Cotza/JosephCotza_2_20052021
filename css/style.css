@@ -592,7 +592,7 @@ footer a {
         width: 100%;
     }
     #homing_places article {
-        background-size: cover;
+        background-size: 100% 100%;
         background-position-y: -50px;
         display: flex;
         flex-direction: column;
@@ -941,8 +941,8 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-size: contain;
-        background-position-y: -10px;
+        background-size: 100% 100%;
+        background-position-y: -40px;
     }
     #homing_places li:nth-child(1) article {
         background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
@@ -1178,6 +1178,9 @@ footer a {
         width: 83%;
         margin: 16px 0;
     }
+    #popular_places article {
+        background-size: 40% 100%;
+    }
     #popular_places li:nth-child(1) article {
         background-image: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
     }
@@ -1247,8 +1250,8 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-size: cover;
-        background-position-y: bottom;
+        background-size: 100% 100%;
+        background-position-y: -30px;
     }
     #homing_places li:nth-child(1) article {
         background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
