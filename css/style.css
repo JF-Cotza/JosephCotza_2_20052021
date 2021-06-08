@@ -971,7 +971,7 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-size: cover;
+        background-size: 100% 100%;
         background-position-y: -10px;
     }
     .activity_details {
@@ -1353,31 +1353,23 @@ footer a {
     #homing_places li:nth-child(6) article {
         background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
     }
-}
-
-
-/* images de fond activités */
-
-#activity_places li:nth-child(1) article {
-    background-image: url('../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-}
-
-#activity_places li:nth-child(2) article {
-    background-image: url('../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-}
-
-#activity_places li:nth-child(3) article {
-    background-image: url('../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-}
-
-#activity_places li:nth-child(4) article {
-    background-image: url('../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-}
-
-#activity_places li:nth-child(5) article {
-    background-image: url('../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-}
-
-#activity_places li:nth-child(6) article {
-    background-image: url('../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    /* images de fond activités */
+    #activity_places li:nth-child(1) article {
+        background-image: url('../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    }
+    #activity_places li:nth-child(2) article {
+        background-image: url('../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    }
+    #activity_places li:nth-child(3) article {
+        background-image: url('../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    }
+    #activity_places li:nth-child(4) article {
+        background-image: url('../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    }
+    #activity_places li:nth-child(5) article {
+        background-image: url('../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    }
+    #activity_places li:nth-child(6) article {
+        background-image: url('../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    }
 }
