@@ -16,7 +16,7 @@
 }
 
 
-/************ Générique *********************/
+/************ Générique / std / standard *********************/
 
 body {
     background-color: white;
@@ -30,7 +30,7 @@ h3 {
 }
 
 
-/* la classe h1 est introduite suite au rejet du validateur de W3C de plusieurs h1 sur la page */
+/* la classe .major_title est introduite suite au rejet du validateur de W3C de plusieurs h1 sur la page */
 
 h1,
 .major_title {
@@ -68,7 +68,7 @@ li {
 }
 
 
-/**** header ****/
+/**** header Générique / std / standard****/
 
 nav {
     width: 100%;
@@ -84,7 +84,6 @@ nav {
 }
 
 #right_links li {
-    /*pour éliminer le débordement */
     font-family: 'ralewaybold';
 }
 
@@ -103,7 +102,7 @@ nav {
 }
 
 
-/**** main ****/
+/**** main Générique / std / standard ****/
 
 main {
     width: 100%;
@@ -111,7 +110,7 @@ main {
 }
 
 
-/* search area */
+/* search area Générique / std / standard */
 
 #search_area span {
     /*total padding 34 */
@@ -138,8 +137,12 @@ main {
     background-color: #0065FC;
 }
 
+#search_button i {
+    font-style: normal;
+}
 
-/* filter area */
+
+/* filter area Générique / std / standard */
 
 #filter_area {
     margin-top: 10px;
@@ -194,7 +197,6 @@ main {
 #filter_form input+label,
 #filter_form input:checked+.label {
     font-family: 'ralewaybold';
-    /*display: inline-block;*/
     padding-right: 1rem;
     border-radius: 25px;
     margin: 4px 0;
@@ -231,7 +233,7 @@ main {
 }
 
 
-/* zone flex : contient hébergement et + populaires */
+/* zone flex : contient hébergement et + populaires Générique / std / standard */
 
 #top_block {
     display: flex;
@@ -243,7 +245,7 @@ main {
 }
 
 
-/* popular area */
+/* popular area Générique / std / standard */
 
 #popular_area {
     border-radius: 15px;
@@ -315,7 +317,7 @@ main {
 }
 
 
-/* homing area */
+/* homing area Générique / std / standard */
 
 #homing_title .h1 {
     margin-right: 0;
@@ -364,7 +366,7 @@ main {
 }
 
 
-/* activity area */
+/* activity area Générique / std / standard */
 
 #activity_title,
 #activity_places {
@@ -410,7 +412,7 @@ main {
 }
 
 
-/********** footer *****************/
+/********** footer Générique / std / standard *****************/
 
 footer {
     display: flex;
@@ -1315,7 +1317,7 @@ footer a {
 }
 
 
-/* trés grands écrans */
+/* trés grands écrans 4000 px/4k*/
 
 @media screen and (min-width: 4000px) {
     /* images zone popular area */
