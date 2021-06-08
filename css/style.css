@@ -503,12 +503,12 @@ footer a {
         box-sizing: border-box;
         height: 65px;
     }
-    #homing_link,
-    #activity_link {
+    #homing_link:hover,
+    #activity_link:hover {
         border-bottom: 3px solid #0065FC;
     }
-    #homing_link:visited,
-    #activity_link:visited {
+    #homing_link,
+    #activity_link {
         border-bottom: 3px solid #DEEBFF;
     }
     #right_links li:nth-child(3) {
