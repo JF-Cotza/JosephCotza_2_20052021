@@ -996,10 +996,10 @@ footer a {
 }
 
 
-/* grands écrans */
+/* grands écrans 992 px*/
 
 @media screen and (min-width: 992px) {
-    /**** header ****/
+    /**** header 992px ****/
     header {
         padding: 0;
     }
@@ -1014,7 +1014,7 @@ footer a {
     nav a:hover {
         background-color: #F2F2F2;
     }
-    /*positionnement logo */
+    /*positionnement logo 992 px*/
     #logo {
         /*suppression de la propriété position */
         width: 160px;
@@ -1026,7 +1026,7 @@ footer a {
         left: 3.2rem;
         top: 40px;
     }
-    /* nav lien : le bloc des liens hebergements/activités/s'inscrire */
+    /* nav lien : le bloc des liens hebergements/activités/s'inscrire 992 px*/
     #right_links {
         flex-direction: row;
         padding: 0;
@@ -1047,9 +1047,6 @@ footer a {
     #right_links li:nth-child(1) {
         margin-right: auto;
     }
-    /*#right_links li:nth-child(3) {
-        flex: .78;
-    }*/
     #homing_link,
     #activity_link {
         border-top: 3px solid #0065FC;
@@ -1066,19 +1063,15 @@ footer a {
         position: absolute;
         left: 1.2rem;
     }
-    /**** main ****/
+    /**** main 992 px ****/
     main div h1 {
         margin: 15px 0 0 0;
     }
-    /*
-                main div p {
-                    margin-top: 10px;
-                }*/
     #head_main {
         width: 92%;
         margin: 0 auto;
     }
-    /* search area */
+    /* search area 992 px*/
     #search_area {
         margin-top: 18px;
     }
@@ -1101,7 +1094,7 @@ footer a {
         border-radius: 0 15px 15px 0;
         text-indent: .5rem;
     }
-    /* filter area */
+    /* filter area 992 px*/
     #filter_area {
         display: flex;
     }
@@ -1127,13 +1120,13 @@ footer a {
     #info i {
         margin-left: .3rem;
     }
-    /**** flex area : top block****/
+    /**** flex area : top block 992 px ****/
     #top_block {
         width: 93%;
         margin: 33px auto 0 auto;
         justify-content: space-around;
     }
-    /* zone flex placement de popular par rapport à homing*/
+    /* zone flex placement de popular par rapport à homing 992 px*/
     #popular_title h2 {
         display: flex;
         justify-content: space-between;
@@ -1145,7 +1138,7 @@ footer a {
         margin-left: 2.4rem;
         flex: 1;
         order: 2;
-        /*permet de placer la popularaera aprés la zone homing */
+        /*permet de placer la popularaera aprés la zone homing 992 px*/
     }
     #popular_places {
         padding: 0;
@@ -1168,7 +1161,7 @@ footer a {
         margin-right: 1rem;
         margin-top: 8.2px;
     }
-    /* homing area */
+    /* homing area 992 px*/
     #homing_area {
         margin-top: 20px;
         flex: 2.11;
@@ -1242,7 +1235,7 @@ footer a {
         font-size: 1.1rem;
         font-family: 'ralewaybold';
     }
-    /* activity area */
+    /* activity area 992 px */
     #activity_title {
         margin-top: 50px;
     }
@@ -1301,14 +1294,14 @@ footer a {
         margin: 0;
         text-indent: .8rem;
     }
-    /*************** footer ************/
-    /* footer media queries +768*/
+    /*************** footer 992 px************/
+    /* footer media queries */
     footer {
         flex-direction: row;
         justify-content: space-between;
         padding-top: 35px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100%;
+        text-indent: 1.2rem;
     }
     footer ul {
         flex: 1;
