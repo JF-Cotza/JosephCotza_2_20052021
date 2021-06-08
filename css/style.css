@@ -976,8 +976,8 @@ footer a {
         margin: 0;
         height: 30px;
     }
-    /*************** footer ************/
-    /* footer media queries +768*/
+    /*************** footer 991 px************/
+    /* footer media queries 991 px */
     footer {
         flex-direction: row;
         justify-content: space-between;
@@ -1237,6 +1237,9 @@ footer a {
         font-family: 'ralewaybold';
     }
     /* activity area 992 px */
+    #activity_area {
+        margin-bottom: 30px;
+    }
     #activity_title {
         margin-top: 50px;
     }
