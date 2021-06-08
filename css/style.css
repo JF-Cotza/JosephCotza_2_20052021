@@ -504,7 +504,9 @@ footer a {
         height: 65px;
     }
     #homing_link:hover,
-    #activity_link:hover {
+    #activity_link:hover,
+    #homing_link:active,
+    #activity_link:active {
         border-bottom: 3px solid #0065FC;
     }
     #homing_link,
