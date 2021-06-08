@@ -434,14 +434,10 @@ footer a {
 /************* média queries ***********/
 
 
-/* petits écrans */
+/* petits écrans 767 px*/
 
 @media screen and (max-width: 767px) {
-    /* pour test */
-    body {
-        background-color: white;
-    }
-    /**** header ****/
+    /**** header  767 px ****/
     header {
         margin-bottom: 15px;
     }
@@ -466,7 +462,7 @@ footer a {
     header li:nth-child(4) {
         order: 4;
     }
-    /* placement du logo au même niveau que les autres lien */
+    /* placement du logo au même niveau que les autres lien 767 px */
     #logo {
         position: relative;
         height: 100%;
@@ -527,7 +523,7 @@ footer a {
         right: 1.3rem;
         bottom: 8px;
     }
-    /**** main ****/
+    /**** main 767 px ****/
     main {
         width: 100%;
         margin-top: 34px;
@@ -543,7 +539,7 @@ footer a {
     main p {
         box-sizing: content-box;
     }
-    /* search area */
+    /* search area 767 px */
     #search_area {
         margin-top: 35px;
         display: flex;
@@ -574,7 +570,7 @@ footer a {
     #search_button .large {
         display: none;
     }
-    /*filter area*/
+    /* filter area 767 px*/
     #filter_form {
         margin: 0;
     }
@@ -588,12 +584,12 @@ footer a {
     #info {
         margin-top: 30px;
     }
-    /**** zone flex contient + populaires et hébergements ****/
+    /**** zone flex contient + populaires et hébergements 767 px ****/
     #top_block {
         flex-direction: column;
         margin-top: 60px;
     }
-    /* popular area */
+    /* popular area 767 px */
     #popular_title,
     #popular_places {
         width: 88%;
@@ -631,7 +627,7 @@ footer a {
     aside {
         padding-bottom: 23px;
     }
-    /* homing place */
+    /* homing place 767 px */
     #homing_area {
         padding-top: 39px;
         margin: 0;
@@ -689,7 +685,7 @@ footer a {
         font-size: 1.1rem;
         width: 88%;
     }
-    /************************** activty area ***********/
+    /************************** activty area 767 px ***********/
     #activity_area h2,
     #activity_places {
         width: 88%;
@@ -729,7 +725,7 @@ footer a {
     #activity_area {
         margin-bottom: 50px;
     }
-    /************** footer media queries -767************/
+    /************** footer media queries 767 px ************/
     footer {
         padding-top: 20px;
         flex-direction: column;
@@ -747,10 +743,10 @@ footer a {
 }
 
 
-/* grands écrans */
+/* grands écrans 991px */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    /**** header ****/
+    /**** header 991px  ****/
     header {
         position: relative;
         /*necessaire pour le z-index: */
@@ -773,7 +769,7 @@ footer a {
     nav a:hover {
         background-color: #F2F2F2;
     }
-    /*positionnement logo */
+    /*positionnement logo 991px */
     #logo {
         display: flex;
         flex: 1;
@@ -781,7 +777,7 @@ footer a {
         align-items: center;
         height: 100px;
     }
-    /* nav lien : le bloc des liens hebergements/activités/s'inscrire */
+    /* nav lien : le bloc des liens hebergements/activités/s'inscrire 991px */
     #right_links {
         flex: 3;
         flex-wrap: nowrap;
@@ -813,12 +809,12 @@ footer a {
         text-align: left;
         text-indent: 25px;
     }
-    /**** main ****/
+    /**** main 991px  ****/
     #head_main {
         width: 88%;
         margin: 0 auto;
     }
-    /* search area */
+    /* search area 991px */
     #search_area {
         margin-top: 18px;
     }
@@ -840,7 +836,7 @@ footer a {
         border-radius: 0 15px 15px 0;
         text-indent: .5rem;
     }
-    /* filter area */
+    /* filter area 991px */
     #filter_area {
         display: flex;
     }
@@ -876,7 +872,7 @@ footer a {
     #info i {
         margin-left: .3rem;
     }
-    /**** Zone flex : top_block ****/
+    /**** Zone flex : top_block 991px ****/
     #top_block {
         flex-direction: column;
         margin-top: 33px;
@@ -886,7 +882,7 @@ footer a {
         width: 88%;
         margin: 0 auto;
     }
-    /* zone flex placement de popular par rapport à homing*/
+    /* zone flex placement de popular par rapport à homing 991px */
     #popular_title h2 {
         display: flex;
         justify-content: space-between;
@@ -927,7 +923,7 @@ footer a {
     aside {
         padding-bottom: 23px;
     }
-    /* homing area */
+    /* homing area 991px */
     #homing_area {
         padding-top: 39px;
         margin: 0;
@@ -961,9 +957,12 @@ footer a {
         background-size: 100% 100%;
         background-position-y: -40px;
     }
-    /*activity area*/
+    /* activity area 991px */
     #activity_area {
         margin: 20px 0;
+    }
+    #activity_area li {
+        margin: 15px 0;
     }
     #activity_places article {
         height: 300px;
