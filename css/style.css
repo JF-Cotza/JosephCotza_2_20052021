@@ -956,7 +956,7 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position-y: -40px;
     }
     /* activity area 991px */
@@ -971,7 +971,7 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position-y: -10px;
     }
     .activity_details {
