@@ -1266,7 +1266,7 @@ footer a {
         background-size: 100% 100%;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -1296,7 +1296,8 @@ footer a {
         grid-row: 3/5;
     }
     #activity_places h3 {
-        padding-bottom: 21px;
+        padding-bottom: 15px;
+        padding-top: 15px;
         margin: 0;
         text-indent: .8rem;
     }
