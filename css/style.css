@@ -1029,6 +1029,7 @@
         #connect_link span {
             position: absolute;
             left: 1.2rem;
+            margin-top: 3px;
         }
         /**** main 992 px ****/
         main div h1 {
