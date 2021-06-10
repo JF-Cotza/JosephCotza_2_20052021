@@ -118,7 +118,6 @@
         border-right: 0;
         font-family: 'ralewaybold';
         text-indent: 1rem;
-        padding: 13.4px 0 12.6px 0;
     }
     
     #search_button {
@@ -404,7 +403,7 @@
     
     #popular_places article,
     #activity_places article,
-    #homing_place article {
+    #homing_places article {
         background-size: cover;
     }
     /************* média queries ***********/
@@ -790,7 +789,7 @@
             margin-top: 18px;
         }
         #search_area input {
-            padding: 13.4px 0px 12.6px 0;
+            padding: 15.8px 0px 13.4px 0;
             width: 14.5rem;
         }
         #search_button .small {
@@ -802,10 +801,14 @@
             background-color: blue;
             border: none;
             padding-top: 14.49px;
-            padding-bottom: 15.21px;
+            padding-bottom: 15.28px;
             padding-right: 1.2rem;
             border-radius: 0 15px 15px 0;
             text-indent: .5rem;
+        }
+        #search_area span {
+            padding-top: 18.85px;
+            padding-bottom: 17.23px;
         }
         /* filter area 991px */
         #filter_area {
@@ -926,6 +929,10 @@
             justify-content: flex-end;
             background-position-y: -40px;
         }
+        .homing_details p,
+        .homing_details h3 {
+            text-indent: 1rem;
+        }
         /* activity area 991px */
         #activity_area {
             margin: 20px 0;
@@ -942,7 +949,9 @@
         }
         .activity_details {
             margin: 0;
-            height: 30px;
+            text-indent: 1rem;
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
         /*************** footer 991 px************/
         /* footer media queries 991 px */
@@ -1043,8 +1052,12 @@
         #search_area {
             margin-top: 18px;
         }
+        #search_area span {
+            padding-top: 18.85px;
+            padding-bottom: 17.24px;
+        }
         #search_area input {
-            padding: 13.4px 0px 12.6px 0;
+            padding: 15.8px 0px 13.4px 0;
             width: 14.5rem;
         }
         #search_button .small {
@@ -1054,10 +1067,9 @@
             font-family: 'ralewaybold';
             font-size: 1.1rem;
             background-color: #0065FC;
-            ;
             border: none;
             padding-top: 14.49px;
-            padding-bottom: 15.21px;
+            padding-bottom: 15.28px;
             padding-right: 1.2rem;
             border-radius: 0 15px 15px 0;
             text-indent: .5rem;
