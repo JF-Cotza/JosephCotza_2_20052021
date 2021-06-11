@@ -801,12 +801,12 @@
         }
         #homing_link,
         #activity_link {
-            border-top: 3px solid #0065FC;
+            border-top: 3px solid grey;
             box-sizing: border-box;
         }
         #homing_link:hover,
         #activity_link:hover {
-            border-top: 3px solid #DEEBFF;
+            border-top: 3px solid #0065FC;
         }
         #connect_link {
             text-align: left;
