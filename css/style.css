@@ -637,7 +637,7 @@
             background-position-y: 161%;
         }
         #homing_places li:nth-child(3) article {
-            background-position-y: 311%;
+            background-position-y: 120px;
         }
         #homing_places li:nth-child(4) article {
             background-position-y: 110%;
@@ -968,6 +968,9 @@
             justify-content: flex-end;
             background-position-y: -40px;
             background-size: cover;
+        }
+        #homing_places li:nth-child(3) article {
+            background-position-y: -80px;
         }
         #homing_places li:nth-child(4) article {
             background-position-y: -85px;
