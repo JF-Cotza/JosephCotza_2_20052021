@@ -1031,7 +1031,9 @@ footer a {
     }
     .homing_details p,
     .homing_details h3 {
-        text-indent: 1rem;
+        /* text-indent: 1rem;*/
+        margin-top: 0;
+        margin-bottom: 5px;
     }
     /* activity area 991px */
     #activity_area {
@@ -1052,7 +1054,7 @@ footer a {
     }
     .activity_details {
         margin: 0;
-        text-indent: 1rem;
+        /*text-indent: 1rem;*/
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -1077,7 +1079,7 @@ footer a {
 }
 
 
-/* grands écrans 992 px*/
+/* grands écrans 992 px et + / vue desktop*/
 
 @media screen and (min-width: 992px) {
     /**** header 992px ****/
