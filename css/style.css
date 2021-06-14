@@ -1094,9 +1094,9 @@ footer a {
     nav div {
         display: inline-block;
     }
-    nav a:hover {
+    /*nav a:hover {
         background-color: #F2F2F2;
-    }
+    }*/
     /*positionnement logo 992 px*/
     #logo {
         /*suppression de la propriété position */
