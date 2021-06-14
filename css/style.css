@@ -797,7 +797,7 @@ footer a {
 }
 
 
-/* grands écrans 991px */
+/*  991px */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     /**** header 991px  ****/
@@ -1327,6 +1327,9 @@ footer a {
     /* activity area 992 px */
     #activity_area {
         margin-bottom: 30px;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #activity_title {
         margin-top: 50px;
