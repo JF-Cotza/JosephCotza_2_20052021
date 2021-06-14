@@ -97,8 +97,14 @@ nav {
     position: relative;
 }
 
-#right_links a:visited {
+#right_links li:nth-child(2) a,
+#right_links li:nth-child(3) a {
     color: black;
+}
+
+#right_links li:nth-child(2) a:hover,
+#right_links li:nth-child(3) a:hover {
+    color: #0065FC;
 }
 
 
