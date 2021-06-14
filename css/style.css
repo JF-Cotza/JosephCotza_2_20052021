@@ -119,7 +119,6 @@ main {
 /* search area Générique / std / standard */
 
 #search_area span {
-    /*total padding 34 */
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 1.3rem;
@@ -553,8 +552,6 @@ footer a {
         padding: 13px 0px 13px 0;
         width: 16.2rem;
         z-index: 1;
-        /*flex-shrink: 0.3;
-             si on ne met pas le shrink, l'input rétrécit et le boutton ne le recouvre pas */
         position: relative;
     }
     #search_button {
@@ -619,12 +616,6 @@ footer a {
         width: 100%;
     }
     #popular_places article {
-        /* anciens
-        background-size: 60% 100%;
-        horizontal - vertical
-        background-position-x: -2rem;
-        background-position-y: bottom;*/
-        /* modifié */
         background-size: cover;
         background-position-x: -4rem;
         background-position-y: 60%;
@@ -663,11 +654,6 @@ footer a {
         flex-direction: column;
         justify-content: flex-end;
         height: 200px;
-        /* ancien 
-        background-position-y: -50px;
-        background-size: 100% 100%;
-        */
-        /* modifié */
         background-size: cover;
     }
     #homing_places li:nth-child(1) article,
@@ -797,7 +783,7 @@ footer a {
 }
 
 
-/*  991px */
+/*  991px  vue tablette */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     /**** header 991px  ****/
@@ -961,12 +947,10 @@ footer a {
         flex-direction: column;
         height: 300px;
         background-repeat: no-repeat;
-        /*background-position: center;*/
     }
     #popular_places article {
         background-size: cover;
         background-position-y: center;
-        /* background-position-x: -38.5rem;*/
     }
     #popular_places li {
         flex: 1;
@@ -1031,7 +1015,6 @@ footer a {
     }
     .homing_details p,
     .homing_details h3 {
-        /* text-indent: 1rem;*/
         margin-top: 0;
         margin-bottom: 5px;
     }
@@ -1047,14 +1030,11 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        /* ancien background-position-y: -10px;*/
         background-size: cover;
-        /*modifié*/
         background-position-y: 60%;
     }
     .activity_details {
         margin: 0;
-        /*text-indent: 1rem;*/
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -1094,9 +1074,6 @@ footer a {
     nav div {
         display: inline-block;
     }
-    /*nav a:hover {
-        background-color: #F2F2F2;
-    }*/
     /*positionnement logo 992 px*/
     #logo {
         /*suppression de la propriété position */
@@ -1233,8 +1210,6 @@ footer a {
         align-items: center;
     }
     #popular_places article {
-        /*ancien background-size: 40% 100%;*/
-        /* modifié */
         background-size: cover;
         background-position-x: -67px;
         background-position-y: 60%;
@@ -1360,7 +1335,6 @@ footer a {
         width: 100%;
         height: 100%;
         box-sizing: border-box;
-        /* ancien background-size: 100% 100%;*/
         background-size: cover;
     }
     #activity_places li:nth-child(1) {
