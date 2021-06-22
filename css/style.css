@@ -183,6 +183,7 @@ main {
 }
 
 #filter_form i {
+    color:#0065FC;
     position: absolute;
     left: -2px;
     width: 50px;
