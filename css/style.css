@@ -15,6 +15,10 @@
     src: url('../font/Raleway-Black.ttf');
 }
 
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../font/Raleway-Light.ttf');
+}
 
 /************ Générique / std / standard *********************/
 
@@ -83,7 +87,7 @@ nav {
     display: flex;
 }
 
-#right_links li {
+#connect_link {
     font-family: 'ralewaybold';
 }
 
@@ -100,11 +104,13 @@ nav {
 #right_links li:nth-child(2) a,
 #right_links li:nth-child(3) a {
     color: black;
+    font-family: 'ralewaythin';
 }
 
 #right_links li:nth-child(2) a:hover,
 #right_links li:nth-child(3) a:hover {
     color: #0065FC;
+    font-family: 'ralewaybold';
 }
 
 
